@@ -1,3 +1,7 @@
+##
+# Copyright (c) 2014 Cristian Porras (porrascristian@gmail.com)
+# Distributed under the GNU GPL v3. For full terms see the file LICENSE.
+##
 
 extends Node2D
 
