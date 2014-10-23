@@ -36,7 +36,7 @@ func _process(delta):
 	processCooldown(delta);
 
 func _on_antivirusButton_pressed():
-		print("Antivirus button");
+		print("Antivirus button");		
 		get_node("antivirusButton").disabled = true;
 		get_node("/root/game").showUnitsMenu("antivirus");
 		

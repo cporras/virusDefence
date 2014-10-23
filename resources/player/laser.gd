@@ -11,6 +11,7 @@ const attackDamage   		= 10;
 
 func _ready():
 	set_process(true);
+	get_node("/root/game/sampleMaster").play("laser");
 	
 func _process(delta):
 	var pos = get_pos();
@@ -44,6 +45,7 @@ func _process(delta):
 	var deleteLaser = false;
 	if(enemyToAttack!=null):
 		enemyToAttack.takeDamage(attackDamage);
+		get_node("/root/game/sampleMaster").play("hit");
 		deleteLaser = true;
 	
 	if(pos.x>1280 || deleteLaser==true):

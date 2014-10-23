@@ -40,10 +40,13 @@ var laserInstances  	= [];
 
 var sumResource 		= preload("res://resources/ui/sum.xml");
 var sumInstance			= null;
+
 var multiplicationResource = preload("res://resources/ui/multiplication.xml");
 var multiplicationInstance = null;
+
 var subtractionResource = preload("res://resources/ui/subtraction.xml");
 var subtractionInstance = null;
+
 var divisionResource 	= preload("res://resources/ui/division.xml");
 var divisionInstance 	= null;
 
@@ -78,6 +81,7 @@ var enemiesCreated 		= 0;
 var enemiesTotal 		= 0;
 var unitBoundedToMouse  = null;
 var mouseClickPosition  = null;
+var sampleMaster	    = null;
 var occupiedUnitMap     = {0:[null,null,null,null,null,null,null,null,null],
 				 			1:[null,null,null,null,null,null,null,null,null],
 				 			2:[null,null,null,null,null,null,null,null,null],
@@ -91,6 +95,7 @@ func _ready():
 	randomize();
 	instantiateOperationMenus();
 	setGame();
+	sampleMaster = get_node("sampleMaster");
 	move_child(get_node("background"),0);
 
 
@@ -236,6 +241,7 @@ func createEnemy(enemyType):
 
 func showUnitsMenu(unitType):	
 	#TODO No se debe poder dar click en ningun elemento de la interfaz cuando se tiene una operacion por resolver
+	sampleMaster.play("click");
 	if(unitType=="antivirus"):
 		sumInstance.setResult();
 		sumInstance.set_pos(operationPos); 
@@ -251,7 +257,7 @@ func showUnitsMenu(unitType):
 		
 
 func goodResultAction(operation):
-	#print("Good result "+operation);
+	sampleMaster.play("result");
 	if(operation=="sum"):
 		sumInstance.set_pos(operationPosOutside);
 		createUnit("antivirus");
@@ -274,7 +280,7 @@ func goodResultAction(operation):
 
 
 func fakeResultAction(operation):
-	#print("Bad result "+operation);
+	sampleMaster.play("fakeResult");
 	if(operation=="sum"):
 		sumInstance.set_pos(operationPosOutside);
 		get_node("menu").setUnitCooldown("antivirus",false);
@@ -410,7 +416,7 @@ func deleteLaserFromMap(laserName):
 	remove_and_delete_child(get_node(laserName));
 	
 func checkWinOrLose():
-	if(enemiesTotal-enemiesCreated==0 && virusInstances.empty()==true && trojanInstances.empty() && wormInstances.empty()==true):
+	if(enemiesTotal-enemiesCreated<=0 && virusInstances.empty()==true && trojanInstances.empty() && wormInstances.empty()==true):
 		winGame();
 	else:
 		var gameOver = false;
