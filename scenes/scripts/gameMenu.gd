@@ -56,7 +56,7 @@ func _on_bombButton_pressed():
 		get_node("/root/game").showUnitsMenu("bomb");
 
 
-func processCooldown(delta):
+func processCooldown(delta):	
 	if(actualCooldownAntivirus>0):
 		actualCooldownAntivirus-=delta;
 		if(actualCooldownAntivirus>0):
@@ -66,7 +66,8 @@ func processCooldown(delta):
 	elif(actualCooldownAntivirus<0):
 		actualCooldownAntivirus=0;
 		get_node("antivirusButton/antivirusCooldown").set_text("");
-		get_node("antivirusButton").disabled = false;
+		if !(get_node("antivirus2Button").disabled && get_node("firewallButton").disabled && get_node("bombButton").disabled):
+			get_node("antivirusButton").disabled = false;
 		
 	if(actualCooldownAntivirus2>0):
 		actualCooldownAntivirus2-=delta;
@@ -77,7 +78,8 @@ func processCooldown(delta):
 	elif(actualCooldownAntivirus2<0):
 		actualCooldownAntivirus2=0;
 		get_node("antivirus2Button/antivirus2Cooldown").set_text("");
-		get_node("antivirus2Button").disabled = false;
+		if !(get_node("antivirusButton").disabled && get_node("firewallButton").disabled && get_node("bombButton").disabled):
+			get_node("antivirus2Button").disabled = false;
 		
 	if(actualCooldownFirewall>0):
 		actualCooldownFirewall-=delta;
@@ -88,7 +90,8 @@ func processCooldown(delta):
 	elif(actualCooldownFirewall<0):
 		actualCooldownFirewall=0;
 		get_node("firewallButton/firewallCooldown").set_text("");
-		get_node("firewallButton").disabled = false;
+		if !(get_node("antivirusButton").disabled && get_node("antivirus2Button").disabled && get_node("bombButton").disabled):
+			get_node("firewallButton").disabled = false;
 		
 	if(actualCooldownBomb>0):
 		actualCooldownBomb-=delta;
@@ -99,7 +102,8 @@ func processCooldown(delta):
 	elif(actualCooldownBomb<0):
 		actualCooldownBomb=0;
 		get_node("bombButton/bombCooldown").set_text("");
-		get_node("bombButton").disabled = false;
+		if !(get_node("antivirusButton").disabled && get_node("antivirus2Button").disabled && get_node("firewallButton").disabled):
+			get_node("bombButton").disabled = false;
 
 
 func setUnitCooldown(unitType,result):
@@ -123,3 +127,41 @@ func setUnitCooldown(unitType,result):
 			actualCooldownBomb = cooldownBombResult;
 		else:
 			actualCooldownBomb = cooldownBombFake;
+			
+func blockOperations():
+	get_node("antivirusButton").disabled = true;
+	get_node("antivirus2Button").disabled = true;
+	get_node("firewallButton").disabled = true;
+	get_node("bombButton").disabled = true;
+	
+func restoreOperationsExceptOne(unitType):
+	if(unitType=="antivirus"):
+		if(actualCooldownAntivirus2<=0):
+			get_node("antivirus2Button").disabled = false;
+		if(actualCooldownFirewall<=0):
+			get_node("firewallButton").disabled = false;
+		if(actualCooldownBomb<=0):
+			get_node("bombButton").disabled = false;
+	elif(unitType=="antivirus2"):
+		if(actualCooldownAntivirus<=0):
+			get_node("antivirusButton").disabled = false;
+		if(actualCooldownFirewall<=0):
+			get_node("firewallButton").disabled = false;
+		if(actualCooldownBomb<=0):
+			get_node("bombButton").disabled = false;
+	elif(unitType=="firewall"):
+		if(actualCooldownAntivirus<=0):
+			get_node("antivirusButton").disabled = false;
+		if(actualCooldownAntivirus2<=0):
+			get_node("antivirus2Button").disabled = false;
+		if(actualCooldownBomb<=0):
+			get_node("bombButton").disabled = false;
+	elif(unitType=="bomb"):
+		if(actualCooldownAntivirus<=0):
+			get_node("antivirusButton").disabled = false;
+		if(actualCooldownAntivirus2<=0):
+			get_node("antivirus2Button").disabled = false;
+		if(actualCooldownFirewall<=0):
+			get_node("firewallButton").disabled = false;
+	
+	

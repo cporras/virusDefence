@@ -50,6 +50,12 @@ var subtractionInstance = null;
 var divisionResource 	= preload("res://resources/ui/division.xml");
 var divisionInstance 	= null;
 
+var winResource 		= preload("res://scenes/win.scn");
+var winInstance 		= null;
+
+var loseResource 		= preload("res://scenes/lose.scn");
+var loseInstance 		= null;
+
 
 ## WORLD DEFINITION ##
 const rowsYPosition			= [220, 340, 450, 560, 670];
@@ -87,6 +93,8 @@ var occupiedUnitMap     = {0:[null,null,null,null,null,null,null,null,null],
 				 			2:[null,null,null,null,null,null,null,null,null],
 							3:[null,null,null,null,null,null,null,null,null],
 							4:[null,null,null,null,null,null,null,null,null] };
+var gameWin				= false;
+var gameLose			= false;
 
 
 func _ready():
@@ -95,7 +103,7 @@ func _ready():
 	randomize();
 	instantiateOperationMenus();
 	setGame();
-	sampleMaster = get_node("sampleMaster");
+	sampleMaster = get_node("sampleMaster");	
 	move_child(get_node("background"),0);
 
 
@@ -150,6 +158,10 @@ func reorderNodeTree():
 	subtractionInstance.raise();
 	move_child(divisionInstance,TreeOrderOperations);
 	divisionInstance.raise();
+	move_child(winInstance,TreeOrderOperations);
+	winInstance.raise();
+	move_child(loseInstance,TreeOrderOperations);
+	loseInstance.raise();
 	
 	if(unitBoundedToMouse!=null):
 		unitBoundedToMouse.raise();
@@ -192,6 +204,13 @@ func instantiateOperationMenus():
 	divisionInstance = divisionResource.instance();
 	divisionInstance.set_pos(operationPosOutside);
 	add_child(divisionInstance);
+	
+	winInstance = winResource.instance();
+	winInstance.set_pos(operationPosOutside);
+	add_child(winInstance);
+	loseInstance = loseResource.instance();
+	loseInstance.set_pos(operationPosOutside);
+	add_child(loseInstance);
 	
 func game(delta):
 	gameSeconds += delta;
@@ -240,7 +259,7 @@ func createEnemy(enemyType):
 	
 
 func showUnitsMenu(unitType):	
-	#TODO No se debe poder dar click en ningun elemento de la interfaz cuando se tiene una operacion por resolver
+	get_node("menu").blockOperations();
 	sampleMaster.play("click");
 	if(unitType=="antivirus"):
 		sumInstance.setResult();
@@ -274,26 +293,27 @@ func goodResultAction(operation):
 		divisionInstance.set_pos(operationPosOutside);
 		createUnit("bomb");
 		get_node("menu").setUnitCooldown("bomb",true);
-	#TODO Se debe rehabilitar la posibilidad de dar click a los elementos de la interfaz una vez se responde una operacion
-	
-	
-
+		
 
 func fakeResultAction(operation):
 	sampleMaster.play("fakeResult");
 	if(operation=="sum"):
 		sumInstance.set_pos(operationPosOutside);
 		get_node("menu").setUnitCooldown("antivirus",false);
+		get_node("menu").restoreOperationsExceptOne("antivirus");
 	elif(operation=="multiplication"):
 		multiplicationInstance.set_pos(operationPosOutside);
 		get_node("menu").setUnitCooldown("antivirus2",false);
+		get_node("menu").restoreOperationsExceptOne("antivirus2");
 	elif(operation=="subtraction"):
 		subtractionInstance.set_pos(operationPosOutside);
 		get_node("menu").setUnitCooldown("firewall",false);
+		get_node("menu").restoreOperationsExceptOne("firewall");
 	elif(operation=="division"):
 		divisionInstance.set_pos(operationPosOutside);
 		get_node("menu").setUnitCooldown("bomb",false);
-	#TODO Se debe rehabilitar la posibilidad de dar click a los elementos de la interfaz una vez se responde una operacion
+		get_node("menu").restoreOperationsExceptOne("bomb");
+	
 
 
 func createUnit(unitType):	
@@ -316,15 +336,15 @@ func createUnit(unitType):
 	unitBoundedToMouse = unitInstance;
 	add_child(unitBoundedToMouse);
 	unitFollowMouse(mouseClickPosition);
-	#TODO No se debe poder dar click en ningun elemento de la interfaz cuando se tiene una unidad por colocar
-
-
+	
+	
 func unitFollowMouse(pos):
 	var unitWidth = unitBoundedToMouse.get_texture().get_width();
 	var unitHeigth = unitBoundedToMouse.get_texture().get_height();
 	pos.x -= unitWidth/2;
 	pos.y -= (unitHeigth-unitHeigth/4);
 	unitBoundedToMouse.set_pos(pos);
+	
 	
 func unitConfirmPosition(pos):
 	var arrayXPos = getMapCoordinateX(pos.x);
@@ -334,35 +354,38 @@ func unitConfirmPosition(pos):
 		unitBoundedToMouse.set_pos(mapPosition);
 		var unitName = "";
 		if(unitBoundedToMouse.get_name()=="antivirus"):
+			get_node("menu").restoreOperationsExceptOne("antivirus");
 			unitName = str(arrayYPos)+"antivirus"+str(antivirusCount);
 			unitBoundedToMouse.set_name(unitName);
 			unitBoundedToMouse.isAttacking=true;
 			antivirusInstances.push_back(unitBoundedToMouse.get_name());
 			antivirusCount+=1;
 		elif(unitBoundedToMouse.get_name()=="antivirus-2"):
+			get_node("menu").restoreOperationsExceptOne("antivirus2");
 			unitName = str(arrayYPos)+"antivirus-2"+str(antivirus2Count);
 			unitBoundedToMouse.set_name(unitName);
 			unitBoundedToMouse.isAttacking=true;
 			antivirus2Instances.push_back(unitBoundedToMouse.get_name());
 			antivirus2Count+=1;
 		elif(unitBoundedToMouse.get_name()=="firewall"):
+			get_node("menu").restoreOperationsExceptOne("firewall");
 			unitName = str(arrayYPos)+"firewall"+str(firewallCount);
 			unitBoundedToMouse.set_name(unitName);
 			firewallInstances.push_back(unitBoundedToMouse.get_name());
 			firewallCount+=1;
 		elif(unitBoundedToMouse.get_name()=="bomb"):
+			get_node("menu").restoreOperationsExceptOne("bomb");
 			unitName=str(arrayYPos)+"bomb"+str(bombCount);
 			unitBoundedToMouse.set_name(unitName);
 			unitBoundedToMouse.isAttacking=true;
 			bombInstances.push_back(unitBoundedToMouse.get_name());
 			bombCount+=1;
-		
+			
+		sampleMaster.play("click");
 		occupiedUnitMap[arrayYPos][arrayXPos]=unitName;
-		unitBoundedToMouse = null;
-		#TODO Se debe rehabilitar la posibilidad de dar click a los elementos de la interfaz una vez se pone la unidad
+		unitBoundedToMouse = null;		
 	else:
-		pass
-		#TODO Se debe reproducir un sonido de error, solo se pueden colocar unidades en puestos vacios y dentro de la cuadricula
+		sampleMaster.play("fakeResult");
 	
 func getMapCoordinateX(x):
 	for i in range(9):
@@ -416,7 +439,7 @@ func deleteLaserFromMap(laserName):
 	remove_and_delete_child(get_node(laserName));
 	
 func checkWinOrLose():
-	if(enemiesTotal-enemiesCreated<=0 && virusInstances.empty()==true && trojanInstances.empty() && wormInstances.empty()==true):
+	if(enemiesTotal-enemiesCreated<=0 && virusInstances.size()<1 && trojanInstances.size()<1 && wormInstances.size()<1):
 		winGame();
 	else:
 		var gameOver = false;
@@ -450,7 +473,33 @@ func checkWinOrLose():
 			gameOver();
 			
 func winGame():
-	print("WIIIIIN!!!!");
+	if(gameWin==false && gameLose==false):
+		print("WIN !!!!");
+		gameWin = true;
+		winInstance.set_pos(operationPos);
+		
+		get_node("menu").blockOperations();
+		if(unitBoundedToMouse!= null):
+			remove_and_delete_child(unitBoundedToMouse);
+			unitBoundedToMouse = null;
+		sumInstance.set_pos(operationPosOutside);
+		multiplicationInstance.set_pos(operationPosOutside);
+		subtractionInstance.set_pos(operationPosOutside);
+		divisionInstance.set_pos(operationPosOutside);
+		
 	
 func gameOver():
-	print("GAME OVER!!!!");
+	if(gameLose==false):
+		print("GAME OVER!!!!");
+		gameLose = true;
+		loseInstance.set_pos(operationPos);
+		
+		get_node("menu").blockOperations();
+		if(unitBoundedToMouse!= null):
+			remove_and_delete_child(unitBoundedToMouse);
+			unitBoundedToMouse = null;
+		sumInstance.set_pos(operationPosOutside);
+		multiplicationInstance.set_pos(operationPosOutside);
+		subtractionInstance.set_pos(operationPosOutside);
+		divisionInstance.set_pos(operationPosOutside);
+		
