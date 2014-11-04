@@ -35,5 +35,9 @@ func _process(delta):
 func takeDamage(damage):
 	healt -= damage;
 	if(healt<=0):
-		print(get_name()+" I'm Dead!!!");
-		get_node("/root/game/").deleteEnemyFromMap("virus",get_name());
+		print("Timer Set!");
+		get_node("Timer").set_wait_time(1000);
+		
+func destory():
+	print(get_name()+" I'm Dead!!!");
+	get_node("/root/game/").deleteEnemyFromMap("virus",get_name());

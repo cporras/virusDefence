@@ -6,15 +6,15 @@
 extends Node2D
 
 ## RESOURCES ##
-var virusResource 		= preload("res://resources/enemies/virus.xml");
+var virusResource 		= preload("res://resources/enemies/virus_anim.xml");
 var virusCount			= 0;
 var virusInstances		= [];
 
-var trojanResource 		= preload("res://resources/enemies/trojan.xml");
+var trojanResource 		= preload("res://resources/enemies/trojan_anim.xml");
 var trojanCount			= 0;
 var trojanInstances		= [];
 
-var wormResource 		= preload("res://resources/enemies/worm.xml");
+var wormResource 		= preload("res://resources/enemies/worm_anim.xml");
 var wormCount			= 0;
 var wormInstances		= [];
 
@@ -78,7 +78,7 @@ const limitXToLose			= 70;
 #List of enemies and the seconds they appear in game
 var enemyList 			= {	"virus" :[1,10,20,30,40,50],
 				 			"trojan":[5,15,25,35,45,55],
-				 			"worm"  :[8,18,28,38,48,58] };
+				 			"worm"  :[8,18,28,38] };
 
 ## GLOBAL VARIABLES ##
 var gameRunning 		= true
@@ -123,12 +123,7 @@ func reorderNodeTree():
 					 "3" : [],
 					 "4" : []};
 	
-	for enemyName in virusInstances:
-		indexMaster[enemyName.substr(0,1)].push_back(enemyName);
-	for enemyName in trojanInstances:
-		indexMaster[enemyName.substr(0,1)].push_back(enemyName);
-	for enemyName in wormInstances:
-		indexMaster[enemyName.substr(0,1)].push_back(enemyName);
+	
 	for unitName in antivirusInstances:
 		indexMaster[unitName.substr(0,1)].push_back(unitName);
 	for unitName in antivirus2Instances:
@@ -137,6 +132,12 @@ func reorderNodeTree():
 		indexMaster[unitName.substr(0,1)].push_back(unitName);
 	for unitName in bombInstances:
 		indexMaster[unitName.substr(0,1)].push_back(unitName);
+	for enemyName in virusInstances:
+		indexMaster[enemyName.substr(0,1)].push_back(enemyName);
+	for enemyName in trojanInstances:
+		indexMaster[enemyName.substr(0,1)].push_back(enemyName);
+	for enemyName in wormInstances:
+		indexMaster[enemyName.substr(0,1)].push_back(enemyName);
 	for laserName in laserInstances:
 		indexMaster[laserName.substr(0,1)].push_back(laserName);
 		
@@ -251,9 +252,8 @@ func createEnemy(enemyType):
 		wormCount+=1;
 	
 	enemyInstance.set_name(enemyName);
-	
 	var enemyPos = Vector2(enemyInitialXPos,rowsYPosition[rowNumber]);
-	enemyPos.y -= enemyInstance.get_texture().get_height();
+	enemyPos.y -= 150;
 	enemyInstance.set_pos(enemyPos);
 	add_child(enemyInstance);
 	

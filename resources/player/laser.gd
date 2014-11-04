@@ -43,7 +43,7 @@ func _process(delta):
 				break;
 			
 	var deleteLaser = false;
-	if(enemyToAttack!=null):
+	if(enemyToAttack!=null && enemyToAttack.isDead==false):
 		enemyToAttack.takeDamage(attackDamage);
 		get_node("/root/game/sampleMaster").play("hit");
 		deleteLaser = true;
