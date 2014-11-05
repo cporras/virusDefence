@@ -8,7 +8,7 @@ extends Sprite
 # ANTIVIRUS2 UNIT PARAMS
 
 const attackDuration 		= 5;
-const timeUntilNextAttack 	= 3;
+var   timeUntilNextAttack 	= 3;
 var   healt 				= 70;
 var   isLaunchingLasers		= false;
 var   timeUntilNextLaser	= 0;

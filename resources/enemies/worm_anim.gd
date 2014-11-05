@@ -9,7 +9,7 @@ extends Node2D
 const velocity 				= 40;
 const attackDuration 		= 3;
 const attackDamage   		= 12;
-const timeUntilNextattack 	= 3;
+var timeUntilNextattack 	= 3;
 var   healt 				= 70;
 var   isAttacking			= false;
 var   isDead				= false;

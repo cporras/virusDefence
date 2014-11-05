@@ -58,18 +58,18 @@ var loseInstance 		= null;
 
 
 ## WORLD DEFINITION ##
-const rowsYPosition			= [220, 340, 450, 560, 670];
+var   rowsYPosition			= [220, 340, 450, 560, 670];
 const mapPositionHeight		= 110;
-const filesXPosition		= [80, 190, 310, 420, 530,640,750,860,970];
+var filesXPosition		= [80, 190, 310, 420, 530,640,750,860,970];
 const mapPositionWidth 		= 110;
 const enemyInitialXPos		= 1300;
 const enemySpriteHeight		= 190;
 const enemySpriteWidth		= 200;
-const enemySpeed			= {"virus":40,  "trojan":50,  "worm":70};
-const enemyStrength			= {"virus":10,  "trojan":15,  "worm":12};
-const enemyHealth			= {"virus":100, "trojan":200, "worm":150};
-const operationPos			= Vector2(0,0);
-const operationPosOutside	= Vector2(-1000,-1000);
+var enemySpeed			= {"virus":40,  "trojan":50,  "worm":70};
+var enemyStrength			= {"virus":10,  "trojan":15,  "worm":12};
+var enemyHealth			= {"virus":100, "trojan":200, "worm":150};
+var operationPos			= Vector2(0,0);
+var operationPosOutside	= Vector2(-1000,-1000);
 const TreeOrderOperations 	= 100;
 const TreeOrderBackground 	= 0;
 const limitXToLose			= 70;

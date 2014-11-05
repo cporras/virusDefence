@@ -6,10 +6,10 @@
 extends Node2D
 
 # TROJAN ENEMY PARAMS
-const velocity 				= 30;
-const attackDuration 		= 3;
-const attackDamage   		= 15;
-const timeUntilNextattack 	= 3;
+var velocity 				= 30;
+var attackDuration 		= 3;
+var attackDamage   		= 15;
+var timeUntilNextattack 	= 3;
 var   healt 				= 60;
 var   isAttacking			= false;
 var   isDead				= false;
