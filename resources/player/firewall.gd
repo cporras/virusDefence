@@ -4,12 +4,11 @@
 ##
 
 extends Sprite
-
 # FIREWALL UNIT PARAMS
 
 const attackDuration 		= 5;
-const attactDamage   		= 30;
-const timeUnitNextAttack 	= 0;
+var attactDamage   		= 30;
+var timeUnitNextAttack 	= 0;
 var   healt 				= 70;
 
 func _ready():
