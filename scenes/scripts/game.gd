@@ -50,10 +50,10 @@ var subtractionInstance = null;
 var divisionResource 	= preload("res://resources/ui/division.xml");
 var divisionInstance 	= null;
 
-var winResource 		= preload("res://scenes/win.scn");
+var winResource 		= preload("res://scenes/win.xml");
 var winInstance 		= null;
 
-var loseResource 		= preload("res://scenes/lose.scn");
+var loseResource 		= preload("res://scenes/lose.xml");
 var loseInstance 		= null;
 
 
