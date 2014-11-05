@@ -154,9 +154,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="8186.3814"
-     inkscape:cy="-155.37537"
+     inkscape:zoom="1"
+     inkscape:cx="8093.4137"
+     inkscape:cy="-194.28265"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -175,7 +175,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -8739,7 +8739,10 @@
        transform="matrix(1.179313,0.30079822,-0.30079822,1.179313,-3244.9665,-3221.0121)" />
     <g
        id="g4680"
-       transform="matrix(0.16458415,0,0,0.16458415,6742.474,1066.2062)">
+       transform="matrix(0.16458415,0,0,0.16458415,6742.474,1066.2062)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          transform="matrix(5.69367,1.4522403,-1.4522403,5.69367,-44409.143,-15905.725)"
          sodipodi:open="true"
@@ -8863,7 +8866,10 @@
     </g>
     <g
        id="g4394"
-       transform="matrix(0.17660736,0,0,0.17660736,6480.2571,945.15294)">
+       transform="matrix(0.17660736,0,0,0.17660736,6480.2571,945.15294)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/base.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          transform="matrix(1.3186567,0,0,1.3186567,328.64912,-3706.3473)"
          sodipodi:open="true"
@@ -9046,7 +9052,10 @@
     </g>
     <g
        id="g4583"
-       transform="matrix(0.1765175,0,0,0.1765175,6384.8328,997.56201)">
+       transform="matrix(0.1765175,0,0,0.1765175,6384.8328,997.56201)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/base.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:type="arc"
          style="fill:#959595;fill-opacity:1;stroke:#000000;stroke-width:5.30843258;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -9301,133 +9310,168 @@
            transform="matrix(-1.1907588,0,0,1.093773,7871.9868,-2022.5666)" />
       </g>
     </g>
-    <g
-       id="g4732"
-       transform="matrix(0.16458415,0,0,0.16458463,6655.6768,1003.4815)">
-      <path
-         sodipodi:type="arc"
-         style="fill:#b20d72;fill-opacity:1;stroke:#000000;stroke-width:2.42322111;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         id="path4696"
-         sodipodi:cx="9354"
-         sodipodi:cy="435.36218"
-         sodipodi:rx="40"
-         sodipodi:ry="45.633038"
-         d="m 9389.8179,415.04792 c 9.8344,22.56747 1.7704,49.95703 -18.0113,61.17628 -19.7817,11.21926 -43.7902,2.01972 -53.6245,-20.54775 -9.8344,-22.56748 -1.7704,-49.95703 18.0113,-61.17629 19.7712,-11.2133 43.7672,-2.02999 53.6111,20.51706"
-         sodipodi:start="5.821826"
-         sodipodi:end="12.10426"
-         sodipodi:open="true"
-         transform="matrix(5.69367,1.4522403,-1.4522403,5.69367,-43480.227,-14888.637)" />
-      <path
-         transform="matrix(4.0079859,1.0222859,-1.0222859,4.0079859,-27828.984,-10102.026)"
-         sodipodi:open="true"
-         sodipodi:end="12.10426"
-         sodipodi:start="5.821826"
-         d="m 9389.8179,412.65873 c 9.8344,25.22166 1.7704,55.83254 -18.0113,68.37131 -19.7817,12.53877 -43.7902,2.25726 -53.6245,-22.96441 -9.8344,-25.22166 -1.7704,-55.83254 18.0113,-68.37131 19.7712,-12.53211 43.7672,-2.26873 53.6111,22.93011"
-         sodipodi:ry="51"
-         sodipodi:rx="40"
-         sodipodi:cy="435.36218"
-         sodipodi:cx="9354"
-         id="path4698"
-         style="fill:#750133;fill-opacity:1;stroke:#000000;stroke-width:3.27198648;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         sodipodi:type="arc" />
-      <path
-         transform="matrix(2.2801064,0.58156906,-0.58156906,2.2801064,-11808.012,-5202.3467)"
-         sodipodi:open="true"
-         sodipodi:end="12.10426"
-         sodipodi:start="5.821826"
-         d="m 9389.8179,412.65873 c 9.8344,25.22166 1.7704,55.83254 -18.0113,68.37131 -19.7817,12.53877 -43.7902,2.25726 -53.6245,-22.96441 -9.8344,-25.22166 -1.7704,-55.83254 18.0113,-68.37131 19.7712,-12.53211 43.7672,-2.26873 53.6111,22.93011"
-         sodipodi:ry="51"
-         sodipodi:rx="40"
-         sodipodi:cy="435.36218"
-         sodipodi:cx="9354"
-         id="path4700"
-         style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:5.7515192;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         sodipodi:type="arc" />
-      <path
-         sodipodi:type="arc"
-         style="fill:#b20d72;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         id="path4702"
-         sodipodi:cx="9354"
-         sodipodi:cy="435.36218"
-         sodipodi:rx="40"
-         sodipodi:ry="51"
-         d="m 9389.8179,412.65873 c 9.8344,25.22166 1.7704,55.83254 -18.0113,68.37131 -19.7817,12.53877 -43.7902,2.25726 -53.6245,-22.96441 -9.8344,-25.22166 -1.7704,-55.83254 18.0113,-68.37131 19.7712,-12.53211 43.7672,-2.26873 53.6111,22.93011"
-         sodipodi:start="5.821826"
-         sodipodi:end="12.10426"
-         sodipodi:open="true"
-         transform="matrix(1.8734394,0.47784369,-0.47784369,1.8734394,-8042.299,-4051.8288)" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:9.66709518;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         d="m 9327.9539,1293.4817 -127.6057,-73.47"
-         id="path4704"
-         inkscape:connector-curvature="0" />
-      <path
-         style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:9.66709518;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-         d="m 9026.5283,1019.4299 c 51.3587,-50.40699 105.4029,-78.23653 170.8915,-88.86366 l 13.6713,15.72204 c -78.2766,9.75652 -127.1086,50.57623 -176.3601,92.96512 -2.964,74.7369 -72.557,-51.33201 -8.2027,-19.8235 z"
-         id="path4706"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccc" />
-      <path
-         sodipodi:type="arc"
-         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         id="path4708"
-         sodipodi:cx="9215.5459"
-         sodipodi:cy="320.3299"
-         sodipodi:rx="2.2980971"
-         sodipodi:ry="2.6516504"
-         d="m 9217.6037,319.14947 c 0.565,1.31135 0.1017,2.90291 -1.0348,3.55484 -1.1365,0.65193 -2.5158,0.11736 -3.0808,-1.19399 -0.565,-1.31135 -0.1017,-2.90291 1.0348,-3.55484 1.1359,-0.65158 2.5145,-0.11796 3.0801,1.19221"
-         sodipodi:start="5.821826"
-         sodipodi:end="12.10426"
-         sodipodi:open="true"
-         transform="matrix(1.9334192,0,0,1.9334192,-8800.2134,414.79467)" />
-      <path
-         style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:9.66709518;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-         d="m 8914.4232,1145.8898 48.5332,24.6084 -8.8863,56.0525 47.5079,16.7474 c -3.2071,-25.9828 2.4564,-48.1641 11.9623,-68.6985 l 22.5578,-1.3671 c -16.5538,25.5805 -17.2479,58.2099 -17.7728,90.9144 l -69.0402,-19.8234 -34.8619,10.937 c -3.8677,-35.9734 -10.0983,-71.6515 0,-109.3707 z"
-         id="path4710"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cccccccccc" />
-      <path
-         transform="matrix(2.1228742,-1.3807429,1.7389803,2.6736593,-11396.296,12784.982)"
-         sodipodi:open="true"
-         sodipodi:end="12.10426"
-         sodipodi:start="5.821826"
-         d="m 9235.9614,472.42508 c 3.9551,7.78069 0.712,17.22393 -7.2435,21.09204 -7.9556,3.86812 -17.611,0.69635 -21.566,-7.08435 -3.9551,-7.78069 -0.712,-17.22393 7.2435,-21.09204 7.9513,-3.86607 17.6017,-0.69989 21.5606,7.07376"
-         sodipodi:ry="15.733126"
-         sodipodi:rx="16.086679"
-         sodipodi:cy="479.42892"
-         sodipodi:cx="9221.5566"
-         id="path4712"
-         style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:4.76212692;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         sodipodi:type="arc" />
-      <path
-         sodipodi:type="arc"
-         style="fill:#b20d72;fill-opacity:1;stroke:#000000;stroke-width:5.61126709;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         id="path4714"
-         sodipodi:cx="9221.5566"
-         sodipodi:cy="479.42892"
-         sodipodi:rx="16.086679"
-         sodipodi:ry="15.733126"
-         d="m 9235.9614,472.42508 c 3.9551,7.78069 0.712,17.22393 -7.2435,21.09204 -7.9556,3.86812 -17.611,0.69635 -21.566,-7.08435 -3.9551,-7.78069 -0.712,-17.22393 7.2435,-21.09204 7.9513,-3.86607 17.6017,-0.69989 21.5606,7.07376"
-         sodipodi:start="5.821826"
-         sodipodi:end="12.10426"
-         sodipodi:open="true"
-         transform="matrix(1.2868747,-0.83699883,1.0541604,1.6207577,-3358.7563,8275.6067)" />
-      <path
-         style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:13.53393459;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-         d="m 9056.9009,1293.2309 114.5642,-33.8414 5.8416,33.0932 -109.7792,31.7909 z"
-         id="path4716"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccc" />
-      <path
-         style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:9.66709518;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-         d="m 9114.7221,1020.8045 113.3763,-56.7562 -48.6292,-53.33852 28.9557,4.08113 50.1462,51.93072 -105.3652,52.61437 95.3933,126.369 -28.1771,21.7047 z"
-         id="path4718"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccccccc" />
-    </g>
+    <path
+       transform="matrix(0.93708784,0.23901643,-0.23901574,0.93709057,-500.4794,-1446.9593)"
+       sodipodi:open="true"
+       sodipodi:end="12.10426"
+       sodipodi:start="5.821826"
+       d="m 9389.8179,415.04792 a 40,45.633038 0 1 1 -0.013,-0.0307"
+       sodipodi:ry="45.633038"
+       sodipodi:rx="40"
+       sodipodi:cy="435.36218"
+       sodipodi:cx="9354"
+       id="path4696"
+       style="fill:#b20d72;fill-opacity:1;stroke:#000000;stroke-width:2.42322111;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#750133;fill-opacity:1;stroke:#000000;stroke-width:3.27198648;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path4698"
+       sodipodi:cx="9354"
+       sodipodi:cy="435.36218"
+       sodipodi:rx="40"
+       sodipodi:ry="51"
+       d="m 9389.8179,412.65873 a 40,51 0 1 1 -0.013,-0.0343"
+       sodipodi:start="5.821826"
+       sodipodi:end="12.10426"
+       sodipodi:open="true"
+       transform="matrix(0.70606846,0.18009194,-0.18009142,0.70607053,1644.4794,-792.52566)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:5.7515192;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path4700"
+       sodipodi:cx="9354"
+       sodipodi:cy="435.36218"
+       sodipodi:rx="40"
+       sodipodi:ry="51"
+       d="m 9389.8179,412.65873 a 40,51 0 1 1 -0.013,-0.0343"
+       sodipodi:start="5.821826"
+       sodipodi:end="12.10426"
+       sodipodi:open="true"
+       transform="matrix(0.40932068,0.10440256,-0.10440225,0.40932188,4396.098,49.417389)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="matrix(0.30833843,0.07864573,-0.0786455,0.30833933,5332.0419,336.61276)"
+       sodipodi:open="true"
+       sodipodi:end="12.10426"
+       sodipodi:start="5.821826"
+       d="m 9389.8179,412.65873 a 40,51 0 1 1 -0.013,-0.0343"
+       sodipodi:ry="51"
+       sodipodi:rx="40"
+       sodipodi:cy="435.36218"
+       sodipodi:cx="9354"
+       id="path4702"
+       style="fill:#b20d72;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4704"
+       d="m 8190.9102,1216.3687 -21.0019,-12.092"
+       style="fill:none;stroke:#000000;stroke-width:1.59105301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4706"
+       d="m 8141.3003,1171.264 c 8.4528,-8.2962 17.3476,-12.8765 28.126,-14.6256 l 2.2501,2.5876 c -12.8831,1.6058 -20.9201,8.3241 -29.0261,15.3006 -0.4878,12.3006 -11.9417,-8.4484 -1.35,-3.2626 z"
+       style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:1.59105301;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="matrix(0.31821016,0,0,0.31821108,5207.3012,1071.7503)"
+       sodipodi:open="true"
+       sodipodi:end="12.10426"
+       sodipodi:start="5.821826"
+       d="m 9217.6037,319.14947 a 2.2980971,2.6516504 0 1 1 -7e-4,-0.002"
+       sodipodi:ry="2.6516504"
+       sodipodi:rx="2.2980971"
+       sodipodi:cy="320.3299"
+       sodipodi:cx="9215.5459"
+       id="path4708"
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:connector-curvature="0"
+       id="path4710"
+       d="m 8122.8496,1192.0773 7.9878,4.0502 -1.4626,9.2254 7.8191,2.7564 c -0.5279,-4.2764 0.4042,-7.9271 1.9688,-11.3068 l 3.7126,-0.225 c -2.7245,4.2102 -2.8387,9.5805 -2.9251,14.9631 l -11.3629,-3.2626 -5.7377,1.8001 c -0.6366,-5.9207 -1.6621,-11.7928 0,-18.0008 z"
+       style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:1.59105301;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:4.76212692;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path4712"
+       sodipodi:cx="9221.5566"
+       sodipodi:cy="479.42892"
+       sodipodi:rx="16.086679"
+       sodipodi:ry="15.733126"
+       d="m 9235.9614,472.42508 a 16.086679,15.733126 0 1 1 -0.01,-0.0106"
+       sodipodi:start="5.821826"
+       sodipodi:end="12.10426"
+       sodipodi:open="true"
+       transform="matrix(0.34939145,-0.22724906,0.28620859,0.44004323,4780.0271,3107.693)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       transform="matrix(0.21179918,-0.13775714,0.17349809,0.26675181,6102.8787,2365.5192)"
+       sodipodi:open="true"
+       sodipodi:end="12.10426"
+       sodipodi:start="5.821826"
+       d="m 9235.9614,472.42508 a 16.086679,15.733126 0 1 1 -0.01,-0.0106"
+       sodipodi:ry="15.733126"
+       sodipodi:rx="16.086679"
+       sodipodi:cy="479.42892"
+       sodipodi:cx="9221.5566"
+       id="path4714"
+       style="fill:#b20d72;fill-opacity:1;stroke:#000000;stroke-width:5.61126709;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:connector-curvature="0"
+       id="path4716"
+       d="m 8146.2991,1216.3274 18.8555,-5.5697 0.9614,5.4466 -18.0679,5.2323 z"
+       style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:2.22747445;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:connector-curvature="0"
+       id="path4718"
+       d="m 8155.8156,1171.4902 18.6599,-9.3412 -8.0036,-8.7787 4.7657,0.6717 8.2533,8.547 -17.3415,8.6595 15.7002,20.7984 -4.6375,3.5723 z"
+       style="fill:#ca522b;fill-opacity:1;stroke:#000000;stroke-width:1.59105301;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/bomb2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
        id="g4364"
-       transform="matrix(0.17660736,0,0,0.17660736,6476.1989,925.18685)">
+       transform="matrix(0.17660736,0,0,0.17660736,6476.1989,925.18685)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/body_c.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          id="g4360">
         <path
@@ -9449,44 +9493,50 @@
          id="path4277"
          inkscape:connector-curvature="0" />
     </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4235"
+       d="m 7806.0688,1059.1027 0,7.3874 0.065,0 c 0.02,0.1047 0.1632,0.2106 0.4469,0.3105 1.0585,0.3729 3.6434,0.5238 5.7724,0.3385 1.4673,-0.1278 2.3323,-0.381 2.3839,-0.649 l 0.065,0 0,-7.3874 -8.7332,0 z"
+       style="fill:#015774;fill-opacity:1;stroke:#000000;stroke-width:1.23625147;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/head.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
-       id="g4330"
-       transform="matrix(0.17660736,0,0,0.17660736,6474.1628,910.9547)">
+       id="g4324"
+       transform="matrix(0.17660736,0,0,0.17660736,6474.1628,910.9547)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/head.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
-         style="fill:#015774;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-         d="m 7541.6223,838.85531 0,41.8294 0.3678,0 c 0.1115,0.593 0.9243,1.1925 2.5309,1.7584 5.9932,2.1112 20.6296,2.9658 32.685,1.9162 8.3079,-0.7233 13.2056,-2.1572 13.498,-3.6746 l 0.3678,0 0,-41.8294 -49.4495,0 z"
-         id="path4235"
-         inkscape:connector-curvature="0" />
-      <g
-         id="g4324">
-        <path
-           sodipodi:nodetypes="cccccccccc"
-           inkscape:connector-curvature="0"
-           id="path4237"
-           d="m 7495.6132,766.4671 -38.25,-14 17.75,-43 132.25,-41 44.75,30 -16.25,42 7.75,83 -59,38 -119,-37 z"
-           style="fill:#016688;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
-        <path
-           style="fill:#026c8f;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-           d="m 7495.6132,766.4671 -38.25,-14 17.75,-43 132.25,-41 44.75,30 -16.25,42 7.75,83 -79,0 -83,-33 z"
-           id="path4239"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="cccccccccc" />
-        <path
-           style="fill:#cbcbcb;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
-           d="m 7530.6132,743.4673 85,5 43,-9 0,31 -40,12.5 -88,-5.5 z"
-           id="path4241"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="ccccccc" />
-        <path
-           style="fill:#016484;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           d="m 7553.6132,726.4672 45,-25 36,12"
-           id="path4243"
-           inkscape:connector-curvature="0" />
-      </g>
+         style="fill:#016688;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
+         d="m 7495.6132,766.4671 -38.25,-14 17.75,-43 132.25,-41 44.75,30 -16.25,42 7.75,83 -59,38 -119,-37 z"
+         id="path4237"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccccc" />
+      <path
+         sodipodi:nodetypes="cccccccccc"
+         inkscape:connector-curvature="0"
+         id="path4239"
+         d="m 7495.6132,766.4671 -38.25,-14 17.75,-43 132.25,-41 44.75,30 -16.25,42 7.75,83 -79,0 -83,-33 z"
+         style="fill:#026c8f;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
+      <path
+         sodipodi:nodetypes="ccccccc"
+         inkscape:connector-curvature="0"
+         id="path4241"
+         d="m 7530.6132,743.4673 85,5 43,-9 0,31 -40,12.5 -88,-5.5 z"
+         style="fill:#cbcbcb;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4243"
+         d="m 7553.6132,726.4672 45,-25 36,12"
+         style="fill:#016484;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     </g>
     <g
        id="g4344"
-       transform="matrix(0.17660736,0,0,0.17660736,6445.4559,917.7477)">
+       transform="matrix(0.17660736,0,0,0.17660736,6445.4559,917.7477)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/body_l.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccccccc"
          inkscape:connector-curvature="0"
@@ -9541,7 +9591,10 @@
     </g>
     <g
        id="g4352"
-       transform="matrix(0.17660736,0,0,0.17660736,6499.6375,911.29447)">
+       transform="matrix(0.17660736,0,0,0.17660736,6499.6375,911.29447)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/body_r.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          style="fill:#027ea8;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"
          d="m 7637.9039,877.50541 -61.3172,0 0,40.4819 c 39.7775,1.8571 40.1668,68.4465 0,68.2357 l 0,115.43519 34.3172,0 z"
@@ -9596,7 +9649,10 @@
     </g>
     <g
        id="g4338"
-       transform="matrix(0.17660736,0,0,0.17660736,6508.6376,967.08796)">
+       transform="matrix(0.17660736,0,0,0.17660736,6508.6376,967.08796)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/cannon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          inkscape:connector-curvature="0"
          id="path4245"
@@ -9618,7 +9674,10 @@
     </g>
     <g
        id="g4577"
-       transform="matrix(0.1765175,0,0,0.1765175,6387.8634,977.65526)">
+       transform="matrix(0.1765175,0,0,0.1765175,6387.8634,977.65526)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/body_c.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          style="fill:#959595;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          d="m 8750.2039,1027.7426 0,70.1012 0.5313,0 c 0.1611,0.9937 1.3353,1.9985 3.6563,2.9469 8.6582,3.538 29.8027,4.9702 47.2187,3.2113 12.002,-1.2121 19.0776,-3.6152 19.5,-6.1582 l 0.5313,0 0,-70.1012 -71.4376,0 z"
@@ -9642,7 +9701,10 @@
     </g>
     <g
        id="g4538"
-       transform="matrix(0.1765175,0,0,0.1765175,6384.6016,920.8647)">
+       transform="matrix(0.1765175,0,0,0.1765175,6384.6016,920.8647)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/head.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          inkscape:connector-curvature="0"
          id="path4457"
@@ -9682,7 +9744,10 @@
     </g>
     <g
        id="g4556"
-       transform="matrix(0.1765175,0,0,0.1765175,6368.3393,933.28658)">
+       transform="matrix(0.1765175,0,0,0.1765175,6368.3393,933.28658)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/body_l.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          id="g4547">
         <path
@@ -9740,7 +9805,10 @@
     </g>
     <g
        id="g4565"
-       transform="matrix(0.1765175,0,0,0.1765175,6418.2834,933.21347)">
+       transform="matrix(0.1765175,0,0,0.1765175,6418.2834,933.21347)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/body_r.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccccccccc"
          inkscape:connector-curvature="0"
@@ -9795,7 +9863,10 @@
     </g>
     <g
        transform="matrix(0.1765175,0,0,0.1765175,6545.8946,1227.9109)"
-       id="g4467">
+       id="g4467"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/canon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          style="fill:#8a101b;fill-opacity:1;stroke:#000000;stroke-width:6.99999952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          d="m 7907.8093,-841.64929 c -0.1032,0 -0.1959,0.017 -0.2993,0.026 l -2.2664,0 0,0.7401 c -0.9284,0.5121 -1.8463,1.2883 -2.7368,2.3523 -6.0906,7.2781 -8.587,25.0331 -5.5591,39.6729 1.7104,8.2699 4.8215,13.789 8.2959,15.7 l 0,0.7401 2.9079,0 86.0383,0 0,-59.2054 -85.7817,0 c -0.1985,-0.017 -0.3997,-0.032 -0.5988,-0.026 z"
@@ -9839,7 +9910,10 @@
     </g>
     <g
        id="g4746"
-       transform="matrix(0.18173413,0,0,0.17850517,6784.1636,1286.2262)">
+       transform="matrix(0.18173413,0,0,0.17850517,6784.1636,1286.2262)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/base.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          style="fill:#b5b5b5;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          d="m 8504.8937,-548.31944 204.4163,0 -191.6884,251.73002 -240.4163,0 z"
@@ -9868,7 +9942,10 @@
     </g>
     <g
        transform="matrix(0.18173413,0,0,0.17850517,6673.8316,1210.3087)"
-       id="g4756">
+       id="g4756"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/mid.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
@@ -9944,7 +10021,10 @@
     </g>
     <g
        id="g4777"
-       transform="matrix(0.18173413,0,0,0.17850517,6557.7122,1134.0781)">
+       transform="matrix(0.18173413,0,0,0.17850517,6557.7122,1134.0781)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/top.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          style="fill:#b5b5b5;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          d="m 9457.0197,-549.60877 204.4163,0 -191.6884,251.73002 -240.4163,0 z"
