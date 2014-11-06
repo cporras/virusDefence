@@ -22,7 +22,7 @@ func _process(delta):
 	if(isDead==false):
 		var pos = get_pos();
 		var arrayXPos = get_node("/root/game").getMapCoordinateX(pos.x);
-		var arrayYPos = get_node("/root/game").getMapCoordinateY(pos.y+150);
+		var arrayYPos = get_node("/root/game").getMapCoordinateY(pos.y);
 		var occupiedUnitMap = get_node("/root/game").occupiedUnitMap;
 		if(arrayYPos!= null && arrayXPos!= null && occupiedUnitMap[arrayYPos][arrayXPos]!=null):
 			if(isAttacking==false):

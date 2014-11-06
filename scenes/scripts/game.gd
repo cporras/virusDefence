@@ -18,19 +18,19 @@ var wormResource 		= preload("res://resources/enemies/worm_anim.xml");
 var wormCount			= 0;
 var wormInstances		= [];
 
-var antivirusResource 	= preload("res://resources/player/antivirus.xml");
+var antivirusResource 	= preload("res://resources/player/antivirus_anim.xml");
 var antivirusCount		= 0;
 var antivirusInstances	= [];
 
-var antivirus2Resource 	= preload("res://resources/player/antivirus2.xml");
+var antivirus2Resource 	= preload("res://resources/player/antivirus2_anim.xml");
 var antivirus2Count		= 0;
 var antivirus2Instances	= [];
 
-var firewallResource 	= preload("res://resources/player/firewall.xml");
+var firewallResource 	= preload("res://resources/player/firewall_anim.xml");
 var firewallCount		= 0;
 var firewallInstances	= [];
 
-var bombResource	 	= preload("res://resources/player/bomb.xml");
+var bombResource	 	= preload("res://resources/player/bomb_anim.xml");
 var bombCount			= 0;
 var bombInstances		= [];
 
@@ -253,7 +253,7 @@ func createEnemy(enemyType):
 	
 	enemyInstance.set_name(enemyName);
 	var enemyPos = Vector2(enemyInitialXPos,rowsYPosition[rowNumber]);
-	enemyPos.y -= 150;
+	#enemyPos.y -= 150;
 	enemyInstance.set_pos(enemyPos);
 	add_child(enemyInstance);
 	
@@ -339,18 +339,14 @@ func createUnit(unitType):
 	
 	
 func unitFollowMouse(pos):
-	var unitWidth = unitBoundedToMouse.get_texture().get_width();
-	var unitHeigth = unitBoundedToMouse.get_texture().get_height();
-	pos.x -= unitWidth/2;
-	pos.y -= (unitHeigth-unitHeigth/4);
 	unitBoundedToMouse.set_pos(pos);
 	
 	
 func unitConfirmPosition(pos):
 	var arrayXPos = getMapCoordinateX(pos.x);
 	var arrayYPos = getMapCoordinateY(pos.y);
-	if(arrayXPos!= null && arrayYPos!= null && occupiedUnitMap[arrayYPos][arrayXPos]==null):		
-		var mapPosition = Vector2(filesXPosition[arrayXPos]-unitBoundedToMouse.get_texture().get_width()/4,rowsYPosition[arrayYPos]- unitBoundedToMouse.get_texture().get_height());
+	if(arrayXPos!= null && arrayYPos!= null && occupiedUnitMap[arrayYPos][arrayXPos]==null):
+		var mapPosition = Vector2(filesXPosition[arrayXPos]+60,rowsYPosition[arrayYPos]);
 		unitBoundedToMouse.set_pos(mapPosition);
 		var unitName = "";
 		if(unitBoundedToMouse.get_name()=="antivirus"):
@@ -371,6 +367,7 @@ func unitConfirmPosition(pos):
 			get_node("menu").restoreOperationsExceptOne("firewall");
 			unitName = str(arrayYPos)+"firewall"+str(firewallCount);
 			unitBoundedToMouse.set_name(unitName);
+			unitBoundedToMouse.isReady=true;
 			firewallInstances.push_back(unitBoundedToMouse.get_name());
 			firewallCount+=1;
 		elif(unitBoundedToMouse.get_name()=="bomb"):
