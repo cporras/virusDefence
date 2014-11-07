@@ -56,6 +56,8 @@ var winInstance 		= null;
 var loseResource 		= preload("res://scenes/lose.xml");
 var loseInstance 		= null;
 
+var explosionResource	= preload("res://resources/effects/explosion.xml");
+var explosionInstances 	= [];
 
 ## WORLD DEFINITION ##
 var   rowsYPosition			= [220, 340, 450, 560, 670];
@@ -148,6 +150,10 @@ func reorderNodeTree():
 				move_child(nodeInstance,i.to_int()+1);
 				nodeInstance.raise();
 
+	for explo in explosionInstances:
+		if(get_node(explo)!=null):
+			move_child(get_node(explo),TreeOrderOperations);
+			get_node(explo).raise();
 	
 	move_child(get_node("menu"),TreeOrderOperations);
 	get_node("menu").raise();
@@ -434,7 +440,18 @@ func createLaserInMap(position):
 func deleteLaserFromMap(laserName):
 	laserInstances.erase(laserName);
 	remove_and_delete_child(get_node(laserName));
-	
+
+func addExplosion(pos):
+	var explo = explosionResource.instance();
+	explo.set_pos(pos);
+	explosionInstances.push_back(explo.get_name());
+	add_child(explo);
+
+func deleteExplosion(exploName):
+	explosionInstances.erase(exploName);
+	remove_and_delete_child(get_node(exploName));
+
+
 func checkWinOrLose():
 	if(enemiesTotal-enemiesCreated<=0 && virusInstances.size()<1 && trojanInstances.size()<1 && wormInstances.size()<1):
 		winGame();

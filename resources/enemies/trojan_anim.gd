@@ -50,6 +50,10 @@ func takeDamage(damage):
 	healt -= damage;
 	if(healt<=0 && isDead == false):
 		isDead = true;
+		var explopos = get_pos();
+		explopos.y-=60;
+		explopos.x+=40;
+		get_node("/root/game").addExplosion(explopos);
 		get_node("anims").play("die",1,1);
 		get_node("Timer").start()
 		
