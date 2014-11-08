@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="20" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://assets/sprites/ui/antivirus2Disabled.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/antivirus2Normal.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/bombNormal.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/fonts/cubanoOperation.fnt" type="Font"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/bombPressed.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/firewallPressed.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/menuBackground.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/antivirusNormal.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/firewallDisabled.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/antivirusHover.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/bombHover.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/antivirus2Pressed.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/bombDisabled.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/firewallHover.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/antivirusDisabled.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/firewallNormal.png" type="Texture"></ext_resource>
 	<ext_resource path="res://assets/sprites/ui/antivirusPressed.png" type="Texture"></ext_resource>
-	<ext_resource path="res://scenes/scripts/gameMenu.gd" type="Script"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/bombPressed.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/firewallNormal.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/bombHover.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/menuBackground.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/firewallHover.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirus2Pressed.png" type="Texture"></ext_resource>
 	<ext_resource path="res://assets/sprites/ui/antivirus2Hover.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirusHover.png" type="Texture"></ext_resource>
+	<ext_resource path="res://scenes/scripts/gameMenu.gd" type="Script"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirusNormal.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/bombDisabled.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/firewallDisabled.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/firewallPressed.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirus2Normal.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirusDisabled.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/bombNormal.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirus2Disabled.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/operationDisabledMask.png" type="Texture"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="73">
+			<string_array  len="56">
 				<string> "menu" </string>
 				<string> "Node2D" </string>
 				<string> "_import_path" </string>
@@ -73,23 +73,6 @@
 				<string> "textures/focused" </string>
 				<string> "textures/click_mask" </string>
 				<string> "antivirusCooldown" </string>
-				<string> "Label" </string>
-				<string> "custom_fonts/font" </string>
-				<string> "custom_colors/font_color" </string>
-				<string> "custom_colors/font_color_shadow" </string>
-				<string> "range/min" </string>
-				<string> "range/max" </string>
-				<string> "range/step" </string>
-				<string> "range/page" </string>
-				<string> "range/value" </string>
-				<string> "range/exp_edit" </string>
-				<string> "rounded_values" </string>
-				<string> "text" </string>
-				<string> "align" </string>
-				<string> "valign" </string>
-				<string> "autowrap" </string>
-				<string> "uppercase" </string>
-				<string> "percent_visible" </string>
 				<string> "antivirus2Button" </string>
 				<string> "antivirus2Cooldown" </string>
 				<string> "firewallButton" </string>
@@ -104,7 +87,7 @@
 			<string> "node_count" </string>
 			<int> 10 </int>
 			<string> "variants" </string>
-			<array  len="56" shared="false">
+			<array  len="47" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -121,20 +104,21 @@
 							<string> "current" </string>
 							<int> 0 </int>
 							<string> "sources" </string>
-							<array  len="1" shared="false">
+							<array  len="2" shared="false">
 								<string> "res://scenes/scripts/gameMenu.gd" </string>
+								<string> "res://scenes/scripts/game.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "pixel_snap" </string>
-							<bool> False </bool>
+							<bool> True </bool>
 							<string> "zoom" </string>
-							<real> 0.9025 </real>
+							<real> 2.517532 </real>
 							<string> "use_snap" </string>
 							<bool> False </bool>
 							<string> "ofs" </string>
-							<vector2> -131.424, -111.833 </vector2>
+							<vector2> -12.7431, -38.2644 </vector2>
 							<string> "snap" </string>
 							<int> 10 </int>
 						</dictionary>
@@ -239,7 +223,7 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 				</dictionary>
 				<vector2> 70.862, -0.814507 </vector2>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/menuBackground.png">  </resource>
@@ -247,49 +231,40 @@
 				<int> 0 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
-				<real> 105 </real>
-				<real> 24 </real>
-				<real> 164 </real>
-				<real> 83 </real>
+				<real> 116 </real>
+				<real> 16 </real>
+				<real> 195 </real>
+				<real> 95 </real>
 				<int> 2 </int>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/antivirusNormal.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/antivirusPressed.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/antivirusHover.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/antivirusDisabled.png">  </resource>
-				<resource name=""></resource>				<real> 58 </real>
-				<real> 62 </real>
-				<resource  resource_type="Font" path="res://assets/fonts/cubanoOperation.fnt">  </resource>
-				<color> 0.0702807, 0.118406, 0.143468, 1 </color>
-				<color> 0, 0, 0, 1 </color>
-				<string> "" </string>
-				<real> -1 </real>
-				<real> 195 </real>
-				<real> 23 </real>
-				<real> 254 </real>
-				<real> 82 </real>
+				<resource name=""></resource>				<vector2> 3, 4 </vector2>
+				<resource  resource_type="Texture" path="res://assets/sprites/ui/operationDisabledMask.png">  </resource>
+				<real> 220 </real>
+				<real> 299 </real>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/antivirus2Normal.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/antivirus2Pressed.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/antivirus2Hover.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/antivirus2Disabled.png">  </resource>
-				<real> 60 </real>
-				<real> 284 </real>
-				<real> 22 </real>
-				<real> 343 </real>
-				<real> 81 </real>
+				<real> 330 </real>
+				<real> 15 </real>
+				<real> 409 </real>
+				<real> 94 </real>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/firewallNormal.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/firewallPressed.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/firewallHover.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/firewallDisabled.png">  </resource>
-				<real> 373 </real>
-				<real> 432 </real>
+				<real> 431 </real>
+				<real> 510 </real>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/bombNormal.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/bombPressed.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/bombHover.png">  </resource>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/bombDisabled.png">  </resource>
-				<real> 59 </real>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="592"> 				-1, -1, 1, 0, -1, 10, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 0, 0, 0, 13, 12, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 9, 8, 5, 9, 6, 14, 10, 15, 3, 16, 4, 17, 3, 18, 3, 19, 11, 20, 11, 21, 12, 22, 13, 23, 3, 24, 14, 0, 0, 0, 26, 25, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 15, 28, 16, 29, 17, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 38, 19, 39, 2, 40, 3, 41, 3, 42, 3, 43, 20, 44, 21, 45, 22, 46, 23, 47, 24, 48, 24, 0, 2, 0, 50, 49, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 29, 25, 30, 26, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 39, 2, 51, 27, 52, 28, 53, 29, 54, 5, 55, 2, 56, 2, 57, 2, 58, 5, 59, 3, 60, 3, 61, 30, 62, 12, 63, 12, 64, 3, 65, 3, 66, 31, 0, 0, 0, 26, 67, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 32, 28, 33, 29, 34, 30, 35, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 38, 19, 39, 2, 40, 3, 41, 3, 42, 3, 43, 36, 44, 37, 45, 38, 46, 39, 47, 24, 48, 24, 0, 4, 0, 50, 68, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 29, 40, 30, 26, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 39, 2, 51, 27, 52, 29, 53, 29, 54, 5, 55, 2, 56, 2, 57, 2, 58, 5, 59, 3, 60, 3, 61, 30, 62, 12, 63, 12, 64, 3, 65, 3, 66, 31, 0, 0, 0, 26, 69, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 41, 28, 42, 29, 43, 30, 44, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 38, 19, 39, 2, 40, 3, 41, 3, 42, 3, 43, 45, 44, 46, 45, 47, 46, 48, 47, 24, 48, 24, 0, 6, 0, 50, 70, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 29, 40, 30, 26, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 39, 2, 51, 27, 52, 29, 53, 29, 54, 5, 55, 2, 56, 2, 57, 2, 58, 5, 59, 3, 60, 3, 61, 30, 62, 12, 63, 12, 64, 3, 65, 3, 66, 31, 0, 0, 0, 26, 71, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 49, 28, 16, 29, 50, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 38, 19, 39, 2, 40, 3, 41, 3, 42, 3, 43, 51, 44, 52, 45, 53, 46, 54, 47, 24, 48, 24, 0, 8, 0, 50, 72, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 29, 55, 30, 26, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 39, 2, 51, 27, 52, 29, 53, 29, 54, 5, 55, 2, 56, 2, 57, 2, 58, 5, 59, 3, 60, 3, 61, 30, 62, 12, 63, 12, 64, 3, 65, 3, 66, 31, 0 </int_array>
+			<int_array  len="496"> 				-1, -1, 1, 0, -1, 10, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 0, 0, 0, 13, 12, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 9, 8, 5, 9, 6, 14, 10, 15, 3, 16, 4, 17, 3, 18, 3, 19, 11, 20, 11, 21, 12, 22, 13, 23, 3, 24, 14, 0, 0, 0, 26, 25, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 15, 28, 16, 29, 17, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 38, 19, 39, 2, 40, 3, 41, 3, 42, 3, 43, 20, 44, 21, 45, 22, 46, 23, 47, 24, 48, 24, 0, 2, 0, 13, 49, -1, 19, 2, 0, 3, 3, 4, 2, 5, 2, 6, 3, 7, 25, 8, 5, 9, 6, 14, 26, 15, 3, 16, 4, 17, 3, 18, 3, 19, 11, 20, 11, 21, 12, 22, 13, 23, 3, 24, 14, 0, 0, 0, 26, 50, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 27, 28, 16, 29, 28, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 38, 19, 39, 2, 40, 3, 41, 3, 42, 3, 43, 29, 44, 30, 45, 31, 46, 32, 47, 24, 48, 24, 0, 4, 0, 13, 51, -1, 19, 2, 0, 3, 3, 4, 2, 5, 2, 6, 3, 7, 25, 8, 5, 9, 6, 14, 26, 15, 3, 16, 4, 17, 3, 18, 3, 19, 11, 20, 11, 21, 12, 22, 13, 23, 3, 24, 14, 0, 0, 0, 26, 52, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 33, 28, 34, 29, 35, 30, 36, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 38, 19, 39, 2, 40, 3, 41, 3, 42, 3, 43, 37, 44, 38, 45, 39, 46, 40, 47, 24, 48, 24, 0, 6, 0, 13, 53, -1, 19, 2, 0, 3, 3, 4, 2, 5, 2, 6, 3, 7, 25, 8, 5, 9, 6, 14, 26, 15, 3, 16, 4, 17, 3, 18, 3, 19, 11, 20, 11, 21, 12, 22, 13, 23, 3, 24, 14, 0, 0, 0, 26, 54, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 41, 28, 34, 29, 42, 30, 36, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 38, 19, 39, 2, 40, 3, 41, 3, 42, 3, 43, 43, 44, 44, 45, 45, 46, 46, 47, 24, 48, 24, 0, 8, 0, 13, 55, -1, 19, 2, 0, 3, 3, 4, 2, 5, 2, 6, 3, 7, 25, 8, 5, 9, 6, 14, 26, 15, 3, 16, 4, 17, 3, 18, 3, 19, 11, 20, 11, 21, 12, 22, 13, 23, 3, 24, 14, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>

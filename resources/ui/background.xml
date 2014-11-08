@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="8" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://assets/sprites/backgrounds/bg.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/backgrounds/ray1_v.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/backgrounds/ray2_v.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/backgrounds/grid0.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/backgrounds/ray0_v.png" type="Texture"></ext_resource>
+<resource_file type="PackedScene" subresource_count="6" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
 	<ext_resource path="res://assets/sprites/backgrounds/ray0_h.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/backgrounds/ray1_v.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/backgrounds/bg.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/backgrounds/ray0_v.png" type="Texture"></ext_resource>
 	<ext_resource path="res://assets/sprites/backgrounds/ray3_h.png" type="Texture"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="82">
+			<string_array  len="80">
 				<string> "background" </string>
 				<string> "Node2D" </string>
 				<string> "_import_path" </string>
@@ -35,7 +33,6 @@
 				<string> "modulate" </string>
 				<string> "region" </string>
 				<string> "region_rect" </string>
-				<string> "grid" </string>
 				<string> "v_ray0" </string>
 				<string> "Particles2D" </string>
 				<string> "config/amount" </string>
@@ -90,7 +87,6 @@
 				<string> "phase_3/color" </string>
 				<string> "emission_points" </string>
 				<string> "v_ray1" </string>
-				<string> "v_ray2" </string>
 				<string> "h_ray0" </string>
 				<string> "h_ray3" </string>
 			</string_array>
@@ -99,9 +95,9 @@
 			<string> "conn_count" </string>
 			<int> 0 </int>
 			<string> "node_count" </string>
-			<int> 8 </int>
+			<int> 6 </int>
 			<string> "variants" </string>
-			<array  len="39" shared="false">
+			<array  len="34" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -121,7 +117,7 @@
 							<string> "use_snap" </string>
 							<bool> False </bool>
 							<string> "ofs" </string>
-							<vector2> -245.898, -215.044 </vector2>
+							<vector2> -238.628, -197.429 </vector2>
 							<string> "snap" </string>
 							<int> 10 </int>
 						</dictionary>
@@ -233,8 +229,6 @@
 				<int> 0 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
-				<vector2> 609, 399 </vector2>
-				<resource  resource_type="Texture" path="res://assets/sprites/backgrounds/grid0.png">  </resource>
 				<vector2> 589, -67 </vector2>
 				<real> 12 </real>
 				<vector2> 600, 0 </vector2>
@@ -243,13 +237,10 @@
 				<color> 0, 0, 0, 1 </color>
 				<vector2_array  len="0"> 					 </vector2_array>
 				<vector2> 644, 791 </vector2>
+				<int> 2 </int>
 				<resource  resource_type="Texture" path="res://assets/sprites/backgrounds/ray1_v.png">  </resource>
 				<real> 180 </real>
 				<real> 120 </real>
-				<vector2> 609, -83 </vector2>
-				<real> 5 </real>
-				<resource  resource_type="Texture" path="res://assets/sprites/backgrounds/ray2_v.png">  </resource>
-				<real> 150 </real>
 				<vector2> -53, 335 </vector2>
 				<real> 25 </real>
 				<vector2> 0, 350 </vector2>
@@ -261,7 +252,7 @@
 				<real> 170 </real>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="740"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 0, 0, 0, 12, 11, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 13, 8, 14, 3, 15, 4, 16, 3, 17, 3, 18, 9, 19, 9, 20, 10, 21, 11, 22, 3, 23, 12, 0, 0, 0, 12, 24, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 13, 8, 5, 9, 6, 13, 14, 14, 1, 15, 4, 16, 3, 17, 3, 18, 9, 19, 9, 20, 10, 21, 11, 22, 3, 23, 12, 0, 0, 0, 26, 25, -1, 59, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 15, 8, 5, 9, 6, 27, 9, 28, 16, 29, 2, 30, 5, 31, 5, 32, 1, 33, 4, 34, 17, 35, 1, 36, 2, 37, 3, 38, 3, 39, 18, 40, 5, 41, 5, 42, 19, 43, 5, 44, 5, 45, 5, 46, 5, 47, 5, 48, 5, 49, 5, 50, 5, 51, 2, 52, 2, 53, 5, 54, 5, 55, 5, 56, 5, 57, 5, 58, 5, 59, 5, 60, 5, 61, 5, 62, 5, 63, 5, 64, 5, 65, 5, 66, 5, 67, 5, 68, 9, 69, 5, 70, 11, 71, 2, 72, 20, 73, 2, 74, 20, 75, 2, 76, 20, 77, 21, 0, 0, 0, 26, 78, -1, 59, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 22, 8, 5, 9, 6, 27, 9, 28, 16, 29, 2, 30, 5, 31, 5, 32, 1, 33, 4, 34, 17, 35, 1, 36, 2, 37, 3, 38, 3, 39, 23, 40, 24, 41, 5, 42, 25, 43, 5, 44, 5, 45, 5, 46, 5, 47, 5, 48, 5, 49, 5, 50, 5, 51, 2, 52, 2, 53, 5, 54, 5, 55, 5, 56, 5, 57, 5, 58, 5, 59, 5, 60, 5, 61, 5, 62, 5, 63, 5, 64, 5, 65, 5, 66, 5, 67, 5, 68, 9, 69, 5, 70, 11, 71, 2, 72, 20, 73, 2, 74, 20, 75, 2, 76, 20, 77, 21, 0, 0, 0, 26, 79, -1, 59, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 26, 8, 5, 9, 6, 27, 9, 28, 27, 29, 2, 30, 5, 31, 5, 32, 1, 33, 4, 34, 17, 35, 1, 36, 2, 37, 3, 38, 3, 39, 28, 40, 5, 41, 5, 42, 29, 43, 5, 44, 5, 45, 5, 46, 5, 47, 5, 48, 5, 49, 5, 50, 5, 51, 2, 52, 2, 53, 5, 54, 5, 55, 5, 56, 5, 57, 5, 58, 5, 59, 5, 60, 5, 61, 5, 62, 5, 63, 5, 64, 5, 65, 5, 66, 5, 67, 5, 68, 9, 69, 5, 70, 11, 71, 2, 72, 20, 73, 2, 74, 20, 75, 2, 76, 20, 77, 21, 0, 0, 0, 26, 80, -1, 59, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 30, 8, 5, 9, 6, 27, 9, 28, 31, 29, 2, 30, 5, 31, 5, 32, 1, 33, 4, 34, 32, 35, 1, 36, 2, 37, 3, 38, 3, 39, 33, 40, 34, 41, 5, 42, 34, 43, 5, 44, 5, 45, 5, 46, 5, 47, 5, 48, 5, 49, 5, 50, 5, 51, 2, 52, 2, 53, 5, 54, 5, 55, 5, 56, 5, 57, 5, 58, 5, 59, 5, 60, 5, 61, 5, 62, 5, 63, 5, 64, 5, 65, 5, 66, 5, 67, 5, 68, 9, 69, 5, 70, 11, 71, 2, 72, 20, 73, 2, 74, 20, 75, 2, 76, 20, 77, 21, 0, 0, 0, 26, 81, -1, 59, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 35, 8, 5, 9, 6, 27, 9, 28, 36, 29, 2, 30, 5, 31, 5, 32, 1, 33, 4, 34, 32, 35, 1, 36, 2, 37, 3, 38, 3, 39, 37, 40, 34, 41, 5, 42, 38, 43, 5, 44, 5, 45, 5, 46, 5, 47, 5, 48, 5, 49, 5, 50, 5, 51, 2, 52, 2, 53, 5, 54, 5, 55, 5, 56, 5, 57, 5, 58, 5, 59, 5, 60, 5, 61, 5, 62, 5, 63, 5, 64, 5, 65, 5, 66, 5, 67, 5, 68, 9, 69, 5, 70, 11, 71, 2, 72, 20, 73, 2, 74, 20, 75, 2, 76, 20, 77, 21, 0 </int_array>
+			<int_array  len="570"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 0, 0, 0, 12, 11, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 13, 8, 14, 3, 15, 4, 16, 3, 17, 3, 18, 9, 19, 9, 20, 10, 21, 11, 22, 3, 23, 12, 0, 0, 0, 25, 24, -1, 59, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 13, 8, 5, 9, 6, 26, 9, 27, 14, 28, 2, 29, 5, 30, 5, 31, 1, 32, 4, 33, 15, 34, 1, 35, 2, 36, 3, 37, 3, 38, 16, 39, 5, 40, 5, 41, 17, 42, 5, 43, 5, 44, 5, 45, 5, 46, 5, 47, 5, 48, 5, 49, 5, 50, 2, 51, 2, 52, 5, 53, 5, 54, 5, 55, 5, 56, 5, 57, 5, 58, 5, 59, 5, 60, 5, 61, 5, 62, 5, 63, 5, 64, 5, 65, 5, 66, 5, 67, 9, 68, 5, 69, 11, 70, 2, 71, 18, 72, 2, 73, 18, 74, 2, 75, 18, 76, 19, 0, 0, 0, 25, 77, -1, 59, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 20, 8, 5, 9, 6, 26, 21, 27, 14, 28, 2, 29, 5, 30, 5, 31, 1, 32, 4, 33, 15, 34, 1, 35, 2, 36, 3, 37, 3, 38, 22, 39, 23, 40, 5, 41, 24, 42, 5, 43, 5, 44, 5, 45, 5, 46, 5, 47, 5, 48, 5, 49, 5, 50, 2, 51, 2, 52, 5, 53, 5, 54, 5, 55, 5, 56, 5, 57, 5, 58, 5, 59, 5, 60, 5, 61, 5, 62, 5, 63, 5, 64, 5, 65, 5, 66, 5, 67, 9, 68, 5, 69, 11, 70, 2, 71, 18, 72, 2, 73, 18, 74, 2, 75, 18, 76, 19, 0, 0, 0, 25, 78, -1, 59, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 25, 8, 5, 9, 6, 26, 21, 27, 26, 28, 2, 29, 5, 30, 5, 31, 1, 32, 4, 33, 27, 34, 1, 35, 2, 36, 3, 37, 3, 38, 28, 39, 29, 40, 5, 41, 29, 42, 5, 43, 5, 44, 5, 45, 5, 46, 5, 47, 5, 48, 5, 49, 5, 50, 2, 51, 2, 52, 5, 53, 5, 54, 5, 55, 5, 56, 5, 57, 5, 58, 5, 59, 5, 60, 5, 61, 5, 62, 5, 63, 5, 64, 5, 65, 5, 66, 5, 67, 9, 68, 5, 69, 11, 70, 2, 71, 18, 72, 2, 73, 18, 74, 2, 75, 18, 76, 19, 0, 0, 0, 25, 79, -1, 59, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 30, 8, 5, 9, 6, 26, 9, 27, 31, 28, 2, 29, 5, 30, 5, 31, 1, 32, 4, 33, 27, 34, 1, 35, 2, 36, 3, 37, 3, 38, 32, 39, 29, 40, 5, 41, 33, 42, 5, 43, 5, 44, 5, 45, 5, 46, 5, 47, 5, 48, 5, 49, 5, 50, 2, 51, 2, 52, 5, 53, 5, 54, 5, 55, 5, 56, 5, 57, 5, 58, 5, 59, 5, 60, 5, 61, 5, 62, 5, 63, 5, 64, 5, 65, 5, 66, 5, 67, 9, 68, 5, 69, 11, 70, 2, 71, 18, 72, 2, 73, 18, 74, 2, 75, 18, 76, 19, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>

@@ -60,48 +60,60 @@ func processCooldown(delta):
 	if(actualCooldownAntivirus>0):
 		actualCooldownAntivirus-=delta;
 		if(actualCooldownAntivirus>0):
-			get_node("antivirusButton/antivirusCooldown").set_text(str(round(actualCooldownAntivirus)));
+			get_node("antivirusButton/antivirusCooldown").show();
+			get_node("antivirusButton/antivirusCooldown").set_scale(Vector2(1,(actualCooldownAntivirus/1)));
 		else:
-			get_node("antivirusButton/antivirusCooldown").set_text("");
+			get_node("antivirusButton/antivirusCooldown").hide();
+			get_node("antivirusButton/antivirusCooldown").set_scale(Vector2(1,1));
 	elif(actualCooldownAntivirus<0):
 		actualCooldownAntivirus=0;
-		get_node("antivirusButton/antivirusCooldown").set_text("");
+		get_node("antivirusButton/antivirusCooldown").hide();
+		get_node("antivirusButton/antivirusCooldown").set_scale(Vector2(1,1));
 		if !(get_node("antivirus2Button").disabled && get_node("firewallButton").disabled && get_node("bombButton").disabled):
 			get_node("antivirusButton").disabled = false;
 		
 	if(actualCooldownAntivirus2>0):
 		actualCooldownAntivirus2-=delta;
 		if actualCooldownAntivirus2>0:
-			get_node("antivirus2Button/antivirus2Cooldown").set_text(str(round(actualCooldownAntivirus2)));
+			get_node("antivirus2Button/antivirus2Cooldown").show();
+			get_node("antivirus2Button/antivirus2Cooldown").set_scale(Vector2(1,(actualCooldownAntivirus2/1)));
 		else:
-			get_node("antivirus2Button/antivirus2Cooldown").set_text("");
+			get_node("antivirus2Button/antivirus2Cooldown").hide();
+			get_node("antivirus2Button/antivirus2Cooldown").set_scale(Vector2(1,1));
 	elif(actualCooldownAntivirus2<0):
 		actualCooldownAntivirus2=0;
-		get_node("antivirus2Button/antivirus2Cooldown").set_text("");
+		get_node("antivirus2Button/antivirus2Cooldown").hide();
+		get_node("antivirus2Button/antivirus2Cooldown").set_scale(Vector2(1,1));
 		if !(get_node("antivirusButton").disabled && get_node("firewallButton").disabled && get_node("bombButton").disabled):
 			get_node("antivirus2Button").disabled = false;
 		
 	if(actualCooldownFirewall>0):
 		actualCooldownFirewall-=delta;
 		if actualCooldownFirewall>0:
-			get_node("firewallButton/firewallCooldown").set_text(str(round(actualCooldownFirewall)));
+			get_node("firewallButton/firewallCooldown").show();
+			get_node("firewallButton/firewallCooldown").set_scale(Vector2(1,(actualCooldownFirewall/1)));
 		else:
-			get_node("firewallButton/firewallCooldown").set_text("");
+			get_node("firewallButton/firewallCooldown").hide();
+			get_node("firewallButton/firewallCooldown").set_scale(Vector2(1,1));
 	elif(actualCooldownFirewall<0):
 		actualCooldownFirewall=0;
-		get_node("firewallButton/firewallCooldown").set_text("");
+		get_node("firewallButton/firewallCooldown").hide();
+		get_node("firewallButton/firewallCooldown").set_scale(Vector2(1,1));
 		if !(get_node("antivirusButton").disabled && get_node("antivirus2Button").disabled && get_node("bombButton").disabled):
 			get_node("firewallButton").disabled = false;
 		
 	if(actualCooldownBomb>0):
 		actualCooldownBomb-=delta;
 		if actualCooldownBomb>0:
-			get_node("bombButton/bombCooldown").set_text(str(round(actualCooldownBomb)));
+			get_node("bombButton/bombCooldown").show();
+			get_node("bombButton/bombCooldown").set_scale(Vector2(1,(actualCooldownBomb/1)));
 		else:
-			get_node("bombButton/bombCooldown").set_text("");
+			get_node("bombButton/bombCooldown").hide();
+			get_node("bombButton/bombCooldown").set_scale(Vector2(1,1));
 	elif(actualCooldownBomb<0):
 		actualCooldownBomb=0;
-		get_node("bombButton/bombCooldown").set_text("");
+		get_node("bombButton/bombCooldown").hide();
+		get_node("bombButton/bombCooldown").set_scale(Vector2(1,1));
 		if !(get_node("antivirusButton").disabled && get_node("antivirus2Button").disabled && get_node("firewallButton").disabled):
 			get_node("bombButton").disabled = false;
 
