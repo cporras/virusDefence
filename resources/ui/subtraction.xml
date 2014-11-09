@@ -1,12 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="4" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+<resource_file type="PackedScene" subresource_count="19" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://assets/fonts/xolonium/xolonium_50.fnt" type="Font"></ext_resource>
 	<ext_resource path="res://assets/sprites/ui/operationBackground.png" type="Texture"></ext_resource>
 	<ext_resource path="res://resources/ui/subtraction.gd" type="Script"></ext_resource>
-	<ext_resource path="res://assets/fonts/cubanoOperation.fnt" type="Font"></ext_resource>
+	<resource type="StyleBoxEmpty" path="local://1">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://2">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://3">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://4">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://5">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://6">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://7">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://8">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://9">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://10">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://11">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://12">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://13">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://14">
+
+	</resource>
+	<resource type="StyleBoxEmpty" path="local://15">
+
+	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="66">
+			<string_array  len="74">
 				<string> "operation" </string>
 				<string> "Node2D" </string>
 				<string> "_import_path" </string>
@@ -65,6 +110,14 @@
 				<string> "result" </string>
 				<string> "Button" </string>
 				<string> "size_flags/vertical" </string>
+				<string> "custom_styles/hover" </string>
+				<string> "custom_styles/pressed" </string>
+				<string> "custom_styles/focus" </string>
+				<string> "custom_styles/disabled" </string>
+				<string> "custom_styles/normal" </string>
+				<string> "custom_colors/font_color" </string>
+				<string> "custom_colors/font_color_hover" </string>
+				<string> "custom_colors/font_color_pressed" </string>
 				<string> "disabled" </string>
 				<string> "toggle_mode" </string>
 				<string> "click_on_press" </string>
@@ -81,7 +134,7 @@
 			<string> "node_count" </string>
 			<int> 9 </int>
 			<string> "variants" </string>
-			<array  len="41" shared="false">
+			<array  len="60" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -96,7 +149,7 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 1 </int>
+							<int> 0 </int>
 							<string> "sources" </string>
 							<array  len="2" shared="false">
 								<string> "res://resources/ui/sum.gd" </string>
@@ -108,16 +161,18 @@
 							<string> "pixel_snap" </string>
 							<bool> False </bool>
 							<string> "zoom" </string>
-							<real> 0.9025 </real>
+							<real> 1.108033 </real>
 							<string> "use_snap" </string>
 							<bool> False </bool>
 							<string> "ofs" </string>
-							<vector2> -124.715, -34.9701 </vector2>
+							<vector2> -114.295, -76.6904 </vector2>
 							<string> "snap" </string>
 							<int> 10 </int>
 						</dictionary>
 						<string> "3D" </string>
 						<dictionary  shared="false">
+							<string> "deflight_rot_y" </string>
+							<real> 0.628319 </real>
 							<string> "zfar" </string>
 							<real> 500 </real>
 							<string> "fov" </string>
@@ -193,12 +248,18 @@
 							<int> 1 </int>
 							<string> "default_light" </string>
 							<bool> True </bool>
+							<string> "ambient_light_color" </string>
+							<color> 0.15, 0.15, 0.15, 1 </color>
 							<string> "show_grid" </string>
 							<bool> True </bool>
 							<string> "show_origin" </string>
 							<bool> True </bool>
 							<string> "znear" </string>
 							<real> 0.1 </real>
+							<string> "default_srgb" </string>
+							<bool> False </bool>
+							<string> "deflight_rot_x" </string>
+							<real> 0.942478 </real>
 						</dictionary>
 					</dictionary>
 					<string> "__editor_run_settings__" </string>
@@ -209,42 +270,61 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 				</dictionary>
-				<vector2> 70.7177, 107.973 </vector2>
+				<vector2> 70.7177, 113.973 </vector2>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/operationBackground.png">  </resource>
 				<int> 1 </int>
 				<int> 0 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
 				<real> 130 </real>
-				<real> 219 </real>
-				<real> 192 </real>
-				<real> 281 </real>
+				<real> 229 </real>
+				<real> 252 </real>
+				<real> 295 </real>
 				<int> 2 </int>
-				<resource  resource_type="Font" path="res://assets/fonts/cubanoOperation.fnt">  </resource>
+				<resource  resource_type="Font" path="res://assets/fonts/xolonium/xolonium_50.fnt">  </resource>
 				<string> "1" </string>
 				<real> -1 </real>
 				<real> 300 </real>
-				<real> 373 </real>
+				<real> 422 </real>
 				<string> "2" </string>
-				<real> 230 </real>
-				<real> 311 </real>
+				<real> 240 </real>
+				<real> 362 </real>
 				<string> "-" </string>
-				<real> 430 </real>
-				<real> 509 </real>
+				<real> 403 </real>
+				<real> 525 </real>
 				<string> "=" </string>
-				<real> 497 </real>
-				<real> 216 </real>
+				<real> 446 </real>
+				<real> 225 </real>
+				<real> 566 </real>
+				<resource  resource_type="StyleBox" path="local://1">  </resource>
+				<resource  resource_type="StyleBox" path="local://2">  </resource>
+				<resource  resource_type="StyleBox" path="local://3">  </resource>
+				<resource  resource_type="StyleBox" path="local://4">  </resource>
+				<resource  resource_type="StyleBox" path="local://5">  </resource>
+				<color> 0.694118, 0.941176, 0.34902, 1 </color>
+				<color> 0.984314, 0.00392157, 0.266667, 1 </color>
+				<resource name=""></resource>				<real> 447 </real>
+				<real> 309 </real>
 				<real> 567 </real>
-				<real> 286 </real>
-				<resource name=""></resource>				<real> 370 </real>
+				<real> 379 </real>
+				<resource  resource_type="StyleBox" path="local://6">  </resource>
+				<resource  resource_type="StyleBox" path="local://7">  </resource>
+				<resource  resource_type="StyleBox" path="local://8">  </resource>
+				<resource  resource_type="StyleBox" path="local://9">  </resource>
+				<resource  resource_type="StyleBox" path="local://10">  </resource>
 				<string> "" </string>
-				<real> 132 </real>
-				<real> 202 </real>
+				<real> 142 </real>
+				<real> 212 </real>
+				<resource  resource_type="StyleBox" path="local://11">  </resource>
+				<resource  resource_type="StyleBox" path="local://12">  </resource>
+				<resource  resource_type="StyleBox" path="local://13">  </resource>
+				<resource  resource_type="StyleBox" path="local://14">  </resource>
+				<resource  resource_type="StyleBox" path="local://15">  </resource>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="531"> 				-1, -1, 1, 0, -1, 10, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 0, 0, 0, 13, 12, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 9, 8, 5, 9, 6, 14, 10, 15, 3, 16, 4, 17, 3, 18, 3, 19, 11, 20, 11, 21, 12, 22, 13, 23, 3, 24, 14, 0, 0, 0, 26, 25, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 15, 28, 16, 29, 17, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 47, 21, 48, 12, 49, 12, 50, 3, 51, 3, 52, 22, 0, 0, 0, 26, 53, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 23, 28, 16, 29, 24, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 47, 25, 48, 12, 49, 12, 50, 3, 51, 3, 52, 22, 0, 0, 0, 26, 0, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 26, 28, 16, 29, 27, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 47, 28, 48, 12, 49, 12, 50, 3, 51, 3, 52, 22, 0, 0, 0, 26, 54, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 29, 28, 16, 29, 30, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 47, 31, 48, 12, 49, 12, 50, 3, 51, 3, 52, 22, 0, 0, 0, 56, 55, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 32, 28, 33, 29, 34, 30, 35, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 57, 19, 38, 2, 39, 20, 58, 3, 59, 3, 60, 3, 47, 21, 61, 36, 62, 1, 63, 3, 48, 11, 0, 0, 0, 56, 64, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 32, 28, 23, 29, 34, 30, 37, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 57, 19, 38, 2, 39, 20, 58, 3, 59, 3, 60, 3, 47, 38, 61, 36, 62, 1, 63, 3, 48, 11, 0, 0, 0, 56, 65, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 32, 28, 39, 29, 34, 30, 40, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 57, 19, 38, 2, 39, 20, 58, 3, 59, 3, 60, 3, 47, 38, 61, 36, 62, 1, 63, 3, 48, 11, 0 </int_array>
+			<int_array  len="579"> 				-1, -1, 1, 0, -1, 10, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 0, 0, 0, 13, 12, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 9, 8, 5, 9, 6, 14, 10, 15, 3, 16, 4, 17, 3, 18, 3, 19, 11, 20, 11, 21, 12, 22, 13, 23, 3, 24, 14, 0, 0, 0, 26, 25, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 15, 28, 16, 29, 17, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 47, 21, 48, 12, 49, 12, 50, 3, 51, 3, 52, 22, 0, 0, 0, 26, 53, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 23, 28, 16, 29, 24, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 47, 25, 48, 12, 49, 12, 50, 3, 51, 3, 52, 22, 0, 0, 0, 26, 0, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 26, 28, 16, 29, 27, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 47, 28, 48, 12, 49, 12, 50, 3, 51, 3, 52, 22, 0, 0, 0, 26, 54, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 29, 28, 16, 29, 30, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 47, 31, 48, 12, 49, 12, 50, 3, 51, 3, 52, 22, 0, 0, 0, 56, 55, -1, 35, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 32, 28, 33, 29, 34, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 57, 19, 38, 2, 58, 35, 59, 36, 60, 37, 61, 38, 62, 39, 39, 20, 63, 40, 64, 41, 65, 41, 66, 3, 67, 3, 68, 3, 47, 21, 69, 42, 70, 1, 71, 3, 48, 19, 0, 0, 0, 56, 72, -1, 35, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 43, 28, 44, 29, 45, 30, 46, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 57, 19, 38, 2, 58, 47, 59, 48, 60, 49, 61, 50, 62, 51, 39, 20, 63, 40, 64, 41, 65, 41, 66, 3, 67, 3, 68, 3, 47, 52, 69, 42, 70, 1, 71, 3, 48, 19, 0, 0, 0, 56, 73, -1, 35, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 32, 28, 53, 29, 34, 30, 54, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 57, 19, 38, 2, 58, 55, 59, 56, 60, 57, 61, 58, 62, 59, 39, 20, 63, 40, 64, 41, 65, 41, 66, 3, 67, 3, 68, 3, 47, 52, 69, 42, 70, 1, 71, 3, 48, 19, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>

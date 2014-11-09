@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="3" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://assets/fonts/cubanoOperation.fnt" type="Font"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/winBackground.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/diaglogBackground.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/fonts/xolonium/xolonium_50.fnt" type="Font"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
@@ -91,11 +91,11 @@
 							<string> "pixel_snap" </string>
 							<bool> True </bool>
 							<string> "zoom" </string>
-							<real> 0.598737 </real>
+							<real> 0.814506 </real>
 							<string> "use_snap" </string>
 							<bool> False </bool>
 							<string> "ofs" </string>
-							<vector2> -975.674, -262.684 </vector2>
+							<vector2> -458.013, -107.828 </vector2>
 							<string> "snap" </string>
 							<int> 10 </int>
 						</dictionary>
@@ -203,7 +203,7 @@
 					<string> "2D" </string>
 				</dictionary>
 				<vector2> 353, 225 </vector2>
-				<resource  resource_type="Texture" path="res://assets/sprites/ui/winBackground.png">  </resource>
+				<resource  resource_type="Texture" path="res://assets/sprites/ui/diaglogBackground.png">  </resource>
 				<int> 1 </int>
 				<int> 0 </int>
 				<color> 1, 1, 1, 1 </color>
@@ -213,7 +213,7 @@
 				<real> 805 </real>
 				<real> 332 </real>
 				<int> 2 </int>
-				<resource  resource_type="Font" path="res://assets/fonts/cubanoOperation.fnt">  </resource>
+				<resource  resource_type="Font" path="res://assets/fonts/xolonium/xolonium_50.fnt">  </resource>
 				<string> "You Win!" </string>
 				<real> -1 </real>
 				<real> 392 </real>

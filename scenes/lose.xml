@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="3" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://assets/fonts/cubanoOperation.fnt" type="Font"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/winBackground.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/diaglogBackground.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/fonts/xolonium/xolonium_50.fnt" type="Font"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
@@ -203,7 +203,7 @@
 					<string> "2D" </string>
 				</dictionary>
 				<vector2> 353, 225 </vector2>
-				<resource  resource_type="Texture" path="res://assets/sprites/ui/winBackground.png">  </resource>
+				<resource  resource_type="Texture" path="res://assets/sprites/ui/diaglogBackground.png">  </resource>
 				<int> 1 </int>
 				<int> 0 </int>
 				<color> 1, 1, 1, 1 </color>
@@ -213,7 +213,7 @@
 				<real> 843 </real>
 				<real> 335 </real>
 				<int> 2 </int>
-				<resource  resource_type="Font" path="res://assets/fonts/cubanoOperation.fnt">  </resource>
+				<resource  resource_type="Font" path="res://assets/fonts/xolonium/xolonium_50.fnt">  </resource>
 				<string> "Game Over!" </string>
 				<real> -1 </real>
 				<real> 392 </real>

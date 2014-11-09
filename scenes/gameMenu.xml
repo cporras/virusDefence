@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="20" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://assets/sprites/ui/antivirusPressed.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/bombPressed.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/firewallNormal.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/bombHover.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/menuBackground.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/firewallHover.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/antivirus2Pressed.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/antivirus2Hover.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/antivirusHover.png" type="Texture"></ext_resource>
-	<ext_resource path="res://scenes/scripts/gameMenu.gd" type="Script"></ext_resource>
 	<ext_resource path="res://assets/sprites/ui/antivirusNormal.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/firewallHover.png" type="Texture"></ext_resource>
 	<ext_resource path="res://assets/sprites/ui/bombDisabled.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/firewallDisabled.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/firewallPressed.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/antivirus2Normal.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirus2Pressed.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/firewallNormal.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirusPressed.png" type="Texture"></ext_resource>
 	<ext_resource path="res://assets/sprites/ui/antivirusDisabled.png" type="Texture"></ext_resource>
+	<ext_resource path="res://scenes/scripts/gameMenu.gd" type="Script"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirus2Hover.png" type="Texture"></ext_resource>
 	<ext_resource path="res://assets/sprites/ui/bombNormal.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/antivirus2Disabled.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirusHover.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/menuBackground.png" type="Texture"></ext_resource>
 	<ext_resource path="res://assets/sprites/ui/operationDisabledMask.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/firewallPressed.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/bombPressed.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/bombHover.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirus2Normal.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/firewallDisabled.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/antivirus2Disabled.png" type="Texture"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
@@ -114,11 +114,11 @@
 							<string> "pixel_snap" </string>
 							<bool> True </bool>
 							<string> "zoom" </string>
-							<real> 2.517532 </real>
+							<real> 0.66342 </real>
 							<string> "use_snap" </string>
 							<bool> False </bool>
 							<string> "ofs" </string>
-							<vector2> -12.7431, -38.2644 </vector2>
+							<vector2> -716.464, -131.109 </vector2>
 							<string> "snap" </string>
 							<int> 10 </int>
 						</dictionary>
@@ -223,7 +223,7 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 				</dictionary>
 				<vector2> 70.862, -0.814507 </vector2>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/menuBackground.png">  </resource>

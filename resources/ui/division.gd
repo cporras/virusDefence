@@ -10,7 +10,7 @@ var num2 = 0;
 var result = 0;
 var fakeResult1 = 0;
 var fakeResult2 = 0;
-var rowYResult = [132,216,300];
+var rowYResult = [142,225,309];
 
 
 func _ready():
