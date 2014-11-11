@@ -60,10 +60,10 @@ var explosionResource	= preload("res://resources/effects/explosion.xml");
 var explosionInstances 	= [];
 
 ## WORLD DEFINITION ##
-var   rowsYPosition			= [220, 340, 450, 560, 670];
-const mapPositionHeight		= 110;
-var filesXPosition		= [80, 190, 310, 420, 530,640,750,860,970];
-const mapPositionWidth 		= 110;
+var   rowsYPosition			= [215, 337, 459, 581, 703];
+const mapPositionHeight		= 122;
+var filesXPosition		= [65, 187, 309, 431, 553,675,797,919,1041];
+const mapPositionWidth 		= 122;
 const enemyInitialXPos		= 1300;
 const enemySpriteHeight		= 190;
 const enemySpriteWidth		= 200;
@@ -78,9 +78,9 @@ const limitXToLose			= 70;
 
 ## LEVEL ENEMIES ##
 #List of enemies and the seconds they appear in game
-var enemyList 			= {	"virus" :[1,10,20,30,40,50],
-				 			"trojan":[5,15,25,35,45,55],
-				 			"worm"  :[8,18,28,38] };
+var enemyList 			= {	"virus" :[5,15,20,25,27,35,50,60,61],
+				 			"trojan":[30,45,53],
+				 			"worm"  :[40,55,62] };
 
 ## GLOBAL VARIABLES ##
 var gameRunning 		= true
@@ -107,9 +107,11 @@ func _ready():
 	setGame();
 	sampleMaster = get_node("sampleMaster");	
 	move_child(get_node("background"),0);
-
+	
 
 func _process(delta):
+	if(get_name()!="game"):
+		set_name("game");
 	if(gameRunning==true):
 		game(delta);
 		reorderNodeTree();
@@ -422,7 +424,7 @@ func deleteEnemyFromMap(enemyType,enemyName):
 	elif(enemyType=="worm"):
 		wormInstances.erase(enemyName);
 	elif(enemyType=="trojan"):
-		bombInstances.erase(enemyName);
+		trojanInstances.erase(enemyName);
 	var node = get_node(enemyName);
 	remove_and_delete_child(node);
 	
@@ -454,6 +456,7 @@ func deleteExplosion(exploName):
 
 func checkWinOrLose():
 	if(enemiesTotal-enemiesCreated<=0 && virusInstances.size()<1 && trojanInstances.size()<1 && wormInstances.size()<1):
+		print("Ganado");
 		winGame();
 	else:
 		var gameOver = false;

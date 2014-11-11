@@ -47,7 +47,16 @@ func _process(delta):
 			for enemy in enemyToAttack:
 				get_node("/root/game/"+enemy).takeDamage(attactDamage);
 			
+			var explopos = get_pos();
+			explopos.y-=60;
+			get_node("/root/game").addExplosion(explopos);
+			
 			get_node("/root/game/sampleMaster").play("explosion");
+			
 			get_node("/root/game/").deleteFromUnitMap("bomb",arrayYPos,arrayXPos)
 		else:
 			timeUntilNextAttack-=delta;
+
+func takeDamage():
+	pass
+	

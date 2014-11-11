@@ -6,17 +6,17 @@
 extends Node2D
 
 ## WORLD DEFINITION ##
-var cooldownAntivirusResult=5; 
-var cooldownAntivirusFake=3;
+var cooldownAntivirusResult=8; 
+var cooldownAntivirusFake=10;
 
-var cooldownAntivirus2Result=5; 
-var cooldownAntivirus2Fake=3;
+var cooldownAntivirus2Result=13; 
+var cooldownAntivirus2Fake=11;
 
-var cooldownFirewallResult=9; 
-var cooldownFirewallFake=5; 
+var cooldownFirewallResult=13; 
+var cooldownFirewallFake=11; 
 
-var cooldownBombResult=12; 
-var cooldownBombFake=10; 
+var cooldownBombResult=20; 
+var cooldownBombFake=15; 
 
 
 ## GLOBAL VARIABLES ##

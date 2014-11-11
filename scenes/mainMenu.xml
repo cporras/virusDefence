@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="5" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://scenes/scripts/lose.gd" type="Script"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/dialogButton.png" type="Texture"></ext_resource>
+<resource_file type="PackedScene" subresource_count="6" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
 	<ext_resource path="res://assets/fonts/xolonium/xolonium_50.fnt" type="Font"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/diaglogBackground.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/dialogButton.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/backgrounds/mainMenuBG.png" type="Texture"></ext_resource>
+	<ext_resource path="res://scenes/scripts/mainMenu.gd" type="Script"></ext_resource>
+	<ext_resource path="res://assets/fonts/xolonium/xolonium_60.fnt" type="Font"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="67">
-				<string> "lose" </string>
+			<string_array  len="69">
+				<string> "mainMenu" </string>
 				<string> "Node2D" </string>
 				<string> "_import_path" </string>
 				<string> "visibility/visible" </string>
@@ -60,7 +61,7 @@
 				<string> "autowrap" </string>
 				<string> "uppercase" </string>
 				<string> "percent_visible" </string>
-				<string> "replay" </string>
+				<string> "play" </string>
 				<string> "TextureButton" </string>
 				<string> "size_flags/vertical" </string>
 				<string> "disabled" </string>
@@ -72,18 +73,20 @@
 				<string> "textures/disabled" </string>
 				<string> "textures/focused" </string>
 				<string> "textures/click_mask" </string>
-				<string> "restart" </string>
-				<string> "mainMenu" </string>
-				<string> "menu" </string>
+				<string> "playText" </string>
+				<string> "credits" </string>
+				<string> "creditsText" </string>
+				<string> "exit" </string>
+				<string> "exitText" </string>
 			</string_array>
 			<string> "version" </string>
 			<int> 1 </int>
 			<string> "conn_count" </string>
 			<int> 0 </int>
 			<string> "node_count" </string>
-			<int> 7 </int>
+			<int> 9 </int>
 			<string> "variants" </string>
-			<array  len="39" shared="false">
+			<array  len="47" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -91,7 +94,7 @@
 				<vector2> 0, 0 </vector2>
 				<real> 0 </real>
 				<vector2> 1, 1 </vector2>
-				<resource  resource_type="Script" path="res://scenes/scripts/lose.gd">  </resource>
+				<resource  resource_type="Script" path="res://scenes/scripts/mainMenu.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
@@ -101,9 +104,9 @@
 							<int> 2 </int>
 							<string> "sources" </string>
 							<array  len="3" shared="false">
-								<string> "res://scenes/win.gd" </string>
 								<string> "res://scenes/scripts/gameMenu.gd" </string>
-								<string> "res://scenes/scripts/lose.gd" </string>
+								<string> "res://scenes/scripts/mainMenu.gd" </string>
+								<string> "res://scenes/scripts/global.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
@@ -115,7 +118,7 @@
 							<string> "use_snap" </string>
 							<bool> False </bool>
 							<string> "ofs" </string>
-							<vector2> -458.013, -107.828 </vector2>
+							<vector2> -304.824, -147.277 </vector2>
 							<string> "snap" </string>
 							<int> 10 </int>
 						</dictionary>
@@ -220,40 +223,48 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 				</dictionary>
-				<vector2> 353, 225 </vector2>
-				<resource  resource_type="Texture" path="res://assets/sprites/ui/diaglogBackground.png">  </resource>
+				<resource  resource_type="Texture" path="res://assets/sprites/backgrounds/mainMenuBG.png">  </resource>
 				<int> 1 </int>
 				<int> 0 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
-				<real> 474 </real>
-				<real> 270 </real>
-				<real> 798 </real>
-				<real> 332 </real>
+				<real> 422 </real>
+				<real> 216 </real>
+				<real> 904 </real>
+				<real> 278 </real>
 				<int> 2 </int>
-				<resource  resource_type="Font" path="res://assets/fonts/xolonium/xolonium_50.fnt">  </resource>
-				<string> "Game Over!" </string>
+				<resource  resource_type="Font" path="res://assets/fonts/xolonium/xolonium_60.fnt">  </resource>
+				<string> "Virus Defence" </string>
 				<real> -1 </real>
-				<real> 400 </real>
-				<real> 613 </real>
-				<real> 479 </real>
+				<real> 535 </real>
+				<real> 297 </real>
+				<real> 748 </real>
+				<real> 376 </real>
 				<resource  resource_type="Texture" path="res://assets/sprites/ui/dialogButton.png">  </resource>
-				<resource name=""></resource>				<real> 9 </real>
+				<resource name=""></resource>				<real> 51 </real>
 				<real> 15 </real>
+				<real> 225 </real>
+				<real> 64 </real>
+				<resource  resource_type="Font" path="res://assets/fonts/xolonium/xolonium_50.fnt">  </resource>
+				<string> "Play" </string>
+				<real> 411 </real>
+				<real> 400 </real>
+				<real> 624 </real>
+				<real> 479 </real>
+				<real> 9 </real>
 				<real> 232 </real>
 				<real> 70 </real>
-				<string> "Restart" </string>
-				<real> 644 </real>
-				<real> 857 </real>
-				<real> 33 </real>
-				<real> 207 </real>
-				<real> 64 </real>
-				<string> "Menu" </string>
+				<string> "Credits" </string>
+				<real> 660 </real>
+				<real> 873 </real>
+				<real> 40 </real>
+				<real> 168 </real>
+				<string> "Exit" </string>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="401"> 				-1, -1, 1, 0, -1, 10, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 0, 0, 0, 13, 12, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 9, 8, 5, 9, 6, 14, 10, 15, 3, 16, 4, 17, 3, 18, 3, 19, 11, 20, 11, 21, 12, 22, 13, 23, 3, 24, 14, 0, 0, 0, 26, 25, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 15, 28, 16, 29, 17, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 25, 21, 47, 12, 48, 12, 49, 3, 50, 3, 51, 22, 0, 0, 0, 53, 52, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 23, 28, 23, 29, 24, 30, 25, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 54, 19, 38, 2, 55, 3, 56, 3, 57, 3, 58, 26, 59, 27, 60, 27, 61, 27, 62, 27, 63, 27, 0, 3, 0, 26, 64, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 28, 28, 29, 29, 30, 30, 31, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 25, 32, 47, 12, 48, 12, 49, 3, 50, 3, 51, 22, 0, 0, 0, 53, 65, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 33, 28, 23, 29, 34, 30, 25, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 54, 19, 38, 2, 55, 3, 56, 3, 57, 3, 58, 26, 59, 27, 60, 27, 61, 27, 62, 27, 63, 27, 0, 5, 0, 26, 66, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 35, 28, 29, 29, 36, 30, 37, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 25, 38, 47, 12, 48, 12, 49, 3, 50, 3, 51, 22, 0 </int_array>
+			<int_array  len="531"> 				-1, -1, 1, 0, -1, 10, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 0, 0, 0, 13, 12, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 14, 9, 15, 3, 16, 4, 17, 3, 18, 3, 19, 10, 20, 10, 21, 11, 22, 12, 23, 3, 24, 13, 0, 0, 0, 26, 25, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 14, 28, 15, 29, 16, 30, 17, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 18, 38, 2, 39, 19, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 25, 20, 47, 11, 48, 11, 49, 3, 50, 3, 51, 21, 0, 0, 0, 53, 52, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 22, 28, 23, 29, 24, 30, 25, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 18, 54, 18, 38, 2, 55, 3, 56, 3, 57, 3, 58, 26, 59, 27, 60, 27, 61, 27, 62, 27, 63, 27, 0, 3, 0, 26, 64, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 28, 28, 29, 29, 30, 30, 31, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 18, 38, 2, 39, 32, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 25, 33, 47, 11, 48, 11, 49, 3, 50, 3, 51, 21, 0, 0, 0, 53, 65, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 34, 28, 35, 29, 36, 30, 37, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 18, 54, 18, 38, 2, 55, 3, 56, 3, 57, 3, 58, 26, 59, 27, 60, 27, 61, 27, 62, 27, 63, 27, 0, 5, 0, 26, 66, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 38, 28, 29, 29, 39, 30, 40, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 18, 38, 2, 39, 32, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 25, 41, 47, 11, 48, 11, 49, 3, 50, 3, 51, 21, 0, 0, 0, 53, 67, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 42, 28, 35, 29, 43, 30, 37, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 18, 54, 18, 38, 2, 55, 3, 56, 3, 57, 3, 58, 26, 59, 27, 60, 27, 61, 27, 62, 27, 63, 27, 0, 7, 0, 26, 68, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 44, 28, 29, 29, 45, 30, 31, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 18, 38, 2, 39, 32, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 25, 46, 47, 11, 48, 11, 49, 3, 50, 3, 51, 21, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>

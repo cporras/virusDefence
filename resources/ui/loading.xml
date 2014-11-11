@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="5" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
-	<ext_resource path="res://scenes/scripts/lose.gd" type="Script"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/dialogButton.png" type="Texture"></ext_resource>
 	<ext_resource path="res://assets/fonts/xolonium/xolonium_50.fnt" type="Font"></ext_resource>
-	<ext_resource path="res://assets/sprites/ui/diaglogBackground.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/ui/loadingCircle.png" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/sprites/backgrounds/black.png" type="Texture"></ext_resource>
+	<resource type="Animation" path="local://1">
+		<string name="resource/name"> "spin" </string>
+		<real name="length"> 2 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.1 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "sprite:transform/rot" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "cont" </string>
+			<bool> True </bool>
+			<string> "transitions" </string>
+			<real_array  len="2"> 				1, 1 </real_array>
+			<string> "values" </string>
+			<array  len="2" shared="false">
+				<real> 0 </real>
+				<real> 360 </real>
+			</array>
+			<string> "times" </string>
+			<real_array  len="2"> 				0, 1 </real_array>
+		</dictionary>
+
+	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
-			<string_array  len="67">
-				<string> "lose" </string>
+			<string_array  len="63">
+				<string> "loading" </string>
 				<string> "Node2D" </string>
 				<string> "_import_path" </string>
 				<string> "visibility/visible" </string>
@@ -18,7 +40,6 @@
 				<string> "transform/pos" </string>
 				<string> "transform/rot" </string>
 				<string> "transform/scale" </string>
-				<string> "script/script" </string>
 				<string> "__meta__" </string>
 				<string> "background" </string>
 				<string> "Sprite" </string>
@@ -33,7 +54,8 @@
 				<string> "modulate" </string>
 				<string> "region" </string>
 				<string> "region_rect" </string>
-				<string> "text" </string>
+				<string> "sprite" </string>
+				<string> "label" </string>
 				<string> "Label" </string>
 				<string> "margin/left" </string>
 				<string> "margin/top" </string>
@@ -55,35 +77,31 @@
 				<string> "range/value" </string>
 				<string> "range/exp_edit" </string>
 				<string> "rounded_values" </string>
+				<string> "text" </string>
 				<string> "align" </string>
 				<string> "valign" </string>
 				<string> "autowrap" </string>
 				<string> "uppercase" </string>
 				<string> "percent_visible" </string>
-				<string> "replay" </string>
-				<string> "TextureButton" </string>
-				<string> "size_flags/vertical" </string>
-				<string> "disabled" </string>
-				<string> "toggle_mode" </string>
-				<string> "click_on_press" </string>
-				<string> "textures/normal" </string>
-				<string> "textures/pressed" </string>
-				<string> "textures/hover" </string>
-				<string> "textures/disabled" </string>
-				<string> "textures/focused" </string>
-				<string> "textures/click_mask" </string>
-				<string> "restart" </string>
-				<string> "mainMenu" </string>
-				<string> "menu" </string>
+				<string> "anim" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "anims/spin" </string>
+				<string> "playback/active" </string>
+				<string> "playback/speed" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
 			</string_array>
 			<string> "version" </string>
 			<int> 1 </int>
 			<string> "conn_count" </string>
 			<int> 0 </int>
 			<string> "node_count" </string>
-			<int> 7 </int>
+			<int> 5 </int>
 			<string> "variants" </string>
-			<array  len="39" shared="false">
+			<array  len="28" shared="false">
 				<node_path> "" </node_path>
 				<bool> True </bool>
 				<real> 1 </real>
@@ -91,31 +109,19 @@
 				<vector2> 0, 0 </vector2>
 				<real> 0 </real>
 				<vector2> 1, 1 </vector2>
-				<resource  resource_type="Script" path="res://scenes/scripts/lose.gd">  </resource>
 				<dictionary  shared="false">
 					<string> "__editor_plugin_states__" </string>
 					<dictionary  shared="false">
-						<string> "Script" </string>
-						<dictionary  shared="false">
-							<string> "current" </string>
-							<int> 2 </int>
-							<string> "sources" </string>
-							<array  len="3" shared="false">
-								<string> "res://scenes/win.gd" </string>
-								<string> "res://scenes/scripts/gameMenu.gd" </string>
-								<string> "res://scenes/scripts/lose.gd" </string>
-							</array>
-						</dictionary>
 						<string> "2D" </string>
 						<dictionary  shared="false">
 							<string> "pixel_snap" </string>
 							<bool> True </bool>
 							<string> "zoom" </string>
-							<real> 0.814506 </real>
+							<real> 0.735092 </real>
 							<string> "use_snap" </string>
 							<bool> False </bool>
 							<string> "ofs" </string>
-							<vector2> -458.013, -107.828 </vector2>
+							<vector2> -392.324, -111.114 </vector2>
 							<string> "snap" </string>
 							<int> 10 </int>
 						</dictionary>
@@ -220,40 +226,32 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "Script" </string>
+					<string> "2D" </string>
 				</dictionary>
-				<vector2> 353, 225 </vector2>
-				<resource  resource_type="Texture" path="res://assets/sprites/ui/diaglogBackground.png">  </resource>
+				<vector2> 1280, 720 </vector2>
+				<resource  resource_type="Texture" path="res://assets/sprites/backgrounds/black.png">  </resource>
 				<int> 1 </int>
 				<int> 0 </int>
 				<color> 1, 1, 1, 1 </color>
 				<rect2> 0, 0, 0, 0 </rect2>
-				<real> 474 </real>
-				<real> 270 </real>
-				<real> 798 </real>
-				<real> 332 </real>
+				<vector2> 1033, 680 </vector2>
+				<resource  resource_type="Texture" path="res://assets/sprites/ui/loadingCircle.png">  </resource>
+				<real> 1065 </real>
+				<real> 658 </real>
+				<real> 1297 </real>
+				<real> 707 </real>
 				<int> 2 </int>
 				<resource  resource_type="Font" path="res://assets/fonts/xolonium/xolonium_50.fnt">  </resource>
-				<string> "Game Over!" </string>
+				<string> "Loading" </string>
 				<real> -1 </real>
-				<real> 400 </real>
-				<real> 613 </real>
-				<real> 479 </real>
-				<resource  resource_type="Texture" path="res://assets/sprites/ui/dialogButton.png">  </resource>
-				<resource name=""></resource>				<real> 9 </real>
-				<real> 15 </real>
-				<real> 232 </real>
-				<real> 70 </real>
-				<string> "Restart" </string>
-				<real> 644 </real>
-				<real> 857 </real>
-				<real> 33 </real>
-				<real> 207 </real>
-				<real> 64 </real>
-				<string> "Menu" </string>
+				<node_path> ".." </node_path>
+				<resource  resource_type="Animation" path="local://1">  </resource>
+				<array  len="0" shared="false">
+				</array>
+				<string> "spin" </string>
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="401"> 				-1, -1, 1, 0, -1, 10, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 11, 8, 0, 0, 0, 13, 12, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 9, 8, 5, 9, 6, 14, 10, 15, 3, 16, 4, 17, 3, 18, 3, 19, 11, 20, 11, 21, 12, 22, 13, 23, 3, 24, 14, 0, 0, 0, 26, 25, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 15, 28, 16, 29, 17, 30, 18, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 25, 21, 47, 12, 48, 12, 49, 3, 50, 3, 51, 22, 0, 0, 0, 53, 52, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 23, 28, 23, 29, 24, 30, 25, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 54, 19, 38, 2, 55, 3, 56, 3, 57, 3, 58, 26, 59, 27, 60, 27, 61, 27, 62, 27, 63, 27, 0, 3, 0, 26, 64, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 28, 28, 29, 29, 30, 30, 31, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 25, 32, 47, 12, 48, 12, 49, 3, 50, 3, 51, 22, 0, 0, 0, 53, 65, -1, 27, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 33, 28, 23, 29, 34, 30, 25, 31, 0, 32, 0, 33, 0, 34, 0, 35, 3, 36, 1, 37, 19, 54, 19, 38, 2, 55, 3, 56, 3, 57, 3, 58, 26, 59, 27, 60, 27, 61, 27, 62, 27, 63, 27, 0, 5, 0, 26, 66, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 35, 28, 29, 29, 36, 30, 37, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 19, 38, 2, 39, 20, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 25, 38, 47, 12, 48, 12, 49, 3, 50, 3, 51, 22, 0 </int_array>
+			<int_array  len="209"> 				-1, -1, 1, 0, -1, 9, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 6, 10, 7, 0, 0, 0, 12, 11, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 5, 9, 8, 13, 9, 14, 3, 15, 4, 16, 3, 17, 3, 18, 10, 19, 10, 20, 11, 21, 12, 22, 3, 23, 13, 0, 0, 0, 12, 24, -1, 19, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 7, 14, 8, 5, 9, 6, 13, 15, 14, 1, 15, 4, 16, 3, 17, 3, 18, 10, 19, 10, 20, 11, 21, 12, 22, 3, 23, 13, 0, 0, 0, 26, 25, -1, 31, 2, 0, 3, 1, 4, 2, 5, 2, 6, 3, 27, 16, 28, 17, 29, 18, 30, 19, 31, 0, 32, 0, 33, 0, 34, 0, 35, 1, 36, 1, 37, 20, 38, 2, 39, 21, 40, 5, 41, 2, 42, 2, 43, 2, 44, 5, 45, 3, 46, 3, 47, 22, 48, 11, 49, 11, 50, 3, 51, 3, 52, 23, 0, 0, 0, 54, 53, -1, 9, 2, 0, 55, 10, 56, 5, 57, 24, 58, 25, 59, 1, 60, 2, 61, 26, 62, 27, 0 </int_array>
 			<string> "conns" </string>
 			<int_array  len="0"> 				 </int_array>
 		</dictionary>
