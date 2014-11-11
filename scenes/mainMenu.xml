@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="6" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://scenes/scripts/mainMenu.gd" type="Script"></ext_resource>
 	<ext_resource path="res://assets/fonts/xolonium/xolonium_50.fnt" type="Font"></ext_resource>
 	<ext_resource path="res://assets/sprites/ui/dialogButton.png" type="Texture"></ext_resource>
-	<ext_resource path="res://assets/sprites/backgrounds/mainMenuBG.png" type="Texture"></ext_resource>
-	<ext_resource path="res://scenes/scripts/mainMenu.gd" type="Script"></ext_resource>
 	<ext_resource path="res://assets/fonts/xolonium/xolonium_60.fnt" type="Font"></ext_resource>
+	<ext_resource path="res://assets/sprites/backgrounds/mainMenuBG.png" type="Texture"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "names" </string>
@@ -101,12 +101,13 @@
 						<string> "Script" </string>
 						<dictionary  shared="false">
 							<string> "current" </string>
-							<int> 2 </int>
+							<int> 1 </int>
 							<string> "sources" </string>
-							<array  len="3" shared="false">
+							<array  len="4" shared="false">
 								<string> "res://scenes/scripts/gameMenu.gd" </string>
 								<string> "res://scenes/scripts/mainMenu.gd" </string>
 								<string> "res://scenes/scripts/global.gd" </string>
+								<string> "res://scenes/scripts/game.gd" </string>
 							</array>
 						</dictionary>
 						<string> "2D" </string>
@@ -223,7 +224,7 @@
 						<int> 0 </int>
 					</dictionary>
 					<string> "__editor_plugin_screen__" </string>
-					<string> "2D" </string>
+					<string> "Script" </string>
 				</dictionary>
 				<resource  resource_type="Texture" path="res://assets/sprites/backgrounds/mainMenuBG.png">  </resource>
 				<int> 1 </int>

@@ -16,5 +16,4 @@ func _on_credits_pressed():
 
 
 func _on_exit_pressed():
-	pass
-	##Close Game
+	get_tree().quit();

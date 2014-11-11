@@ -856,9 +856,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="-697.35114"
-     inkscape:cy="-514.73685"
+     inkscape:zoom="2"
+     inkscape:cx="-526.56055"
+     inkscape:cy="-1436.6097"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -3543,5 +3543,90 @@
        inkscape:export-filename="/home/cristian/godot/Virus/other stuff/loadingCircle.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/tropicalNihilism.png"
+       style="fill:#010101;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       id="rect3452"
+       width="1280"
+       height="720"
+       x="-1800"
+       y="2292.3623" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3454"
+       style="font-size:56px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:-8px;writing-mode:lr-tb;text-anchor:middle;fill:#b3b3b3;fill-opacity:1;stroke:none;font-family:Oxygen Mono;-inkscape-font-specification:Oxygen Mono Bold"
+       transform="translate(21.345705,48.196289)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/tropicalNihilism.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><flowRegion
+         id="flowRegion3456"><rect
+           id="rect3458"
+           width="668"
+           height="160"
+           x="-1510"
+           y="2574.3621"
+           style="font-size:56px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;word-spacing:-8px;writing-mode:lr-tb;text-anchor:middle;fill:#b3b3b3;font-family:Oxygen Mono;-inkscape-font-specification:Oxygen Mono Bold" /></flowRegion><flowPara
+         id="flowPara3460"
+         style="font-size:56px;font-style:normal;font-weight:bold;letter-spacing:-4.85294819;word-spacing:-8px;-inkscape-font-specification:Oxygen Mono Bold">Tropical Nihilism.</flowPara></flowRoot>    <image
+       y="2532.3623"
+       x="-380"
+       id="image3470"
+       xlink:href="file:///home/cristian/godot/Virus/icon.png"
+       height="64"
+       width="64" />
+    <g
+       id="g3506"
+       transform="matrix(0.80987542,0,0,0.81015381,-59.500478,483.12211)"
+       inkscape:export-filename="/home/cristian/godot/Virus/other stuff/icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/cristian/godot/Virus/other stuff/antivirus2Normal.png"
+         id="g4296-0"
+         transform="translate(1110.2513,1849.6776)">
+        <path
+           style="fill:#b0ffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m -1413.0245,681.36218 29.651,0 4.3887,2.19438 29.6242,0 0,-2.19438 14.2634,0 0,5.48595 -2.1944,0 0,62.53978 3.2916,0 0,10.97189 -12.0691,0 0,-2.19438 -57.0538,0 -7.6803,-8.77751 0,-31.81849 -2.1944,0 z"
+           id="path4298-3"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccccccccccccccc" />
+        <path
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m -1407.5117,685.75094 59.2482,0 6.5832,7.68032 0,62.53978 -51.5679,0 -14.2635,-15.36065 z"
+           id="path4300-9"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccc" />
+      </g>
+      <g
+         id="g4456-2"
+         transform="translate(1111.2512,942.67767)">
+        <rect
+           style="fill:#b1f059;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="rect4320-0"
+           width="10"
+           height="60"
+           x="-2128.6978"
+           y="147.73991"
+           transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,0,0)"
+           inkscape:export-filename="/home/cristian/godot/Virus/other stuff/antivirus2Normal.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+        <rect
+           y="-2153.6978"
+           x="172.73991"
+           height="60"
+           width="10"
+           id="rect4322-5"
+           style="fill:#b1f059;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(0.70710678,0.70710678,0.70710678,-0.70710678,0,0)"
+           inkscape:export-filename="/home/cristian/godot/Virus/other stuff/antivirus2Normal.png"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+      </g>
+    </g>
   </g>
 </svg>

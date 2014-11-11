@@ -455,8 +455,7 @@ func deleteExplosion(exploName):
 
 
 func checkWinOrLose():
-	if(enemiesTotal-enemiesCreated<=0 && virusInstances.size()<1 && trojanInstances.size()<1 && wormInstances.size()<1):
-		print("Ganado");
+	if(enemiesTotal-enemiesCreated<=0 && virusInstances.size()<1 && trojanInstances.size()<1 && wormInstances.size()<1 && gameWin==false):
 		winGame();
 	else:
 		var gameOver = false;
