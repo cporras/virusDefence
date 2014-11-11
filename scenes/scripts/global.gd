@@ -8,17 +8,17 @@ var time_max = 100 # msec
 var current_scene
 
 func _ready():
-	var root = get_tree().get_root();
+	var root = get_node("/root/");
 	current_scene = root.get_child( root.get_child_count() -1 );
 
 func goto_scene(scene):
-        var s = ResourceLoader.load(scene)
-        current_scene.queue_free()
-        current_scene = s.instance()
-        get_tree().get_root().add_child(current_scene) 
+	var s = ResourceLoader.load(scene);
+	current_scene.queue_free();
+	current_scene = s.instance();
+	get_node("/root/").add_child(current_scene);
 
 func goto_scene_interactive(path):
-	loader = ResourceLoader.load_interactive(path)
+	loader = ResourceLoader.load_interactive(path);
 	if loader == null:
 		show_error();
 		return;

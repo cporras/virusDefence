@@ -16,4 +16,5 @@ func _on_credits_pressed():
 
 
 func _on_exit_pressed():
-	get_tree().quit();
+	#get_tree().quit();
+	get_scene().quit();
