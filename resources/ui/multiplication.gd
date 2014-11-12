@@ -16,9 +16,9 @@ var rowYResult = [142,225,309];
 func _ready():
 	get_node("result").connect("pressed",self,"_on_result_pressed")
 	get_node("fakeResult1").connect("pressed",self,"_on_fakeResult_pressed")
-	get_node("fakeResult2").connect("pressed",self,"_on_fakeResult_pressed")
-	set_process(true);
+	get_node("fakeResult2").connect("pressed",self,"_on_fakeResult_pressed")	
 	setResult();
+	set_process(true);
 
 func setResult():
 	randomize();
